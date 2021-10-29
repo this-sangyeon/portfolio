@@ -16,8 +16,8 @@ section{
 }
 section:nth-of-type(2){
     width: 100%;
-    height: 100%;
-    background-color: blue;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
     position: relative;
 }
 /* section:nth-of-type(3){
@@ -77,40 +77,46 @@ section:nth-of-type(4){
     display: flex; flex-direction: column; 
 } 
 
-.work-area .work-container{
-    width: 80%; height: 100vh;  
+/* .work-area .work-container{
+     height: 100vh;  
     position: absolute; top:10%; left: 7%; z-index: 300;
-} 
-.work-area .work-container .work-title{
-    width: 100%; height: 20%; margin-bottom:5%;
+}  */
+.work-area .work-title{
+    width: 80%; height: 20%; margin-bottom:5%; position: absolute; z-index: 300;
     color:#FF5D2C; display: flex; align-items: center; justify-items: center;
+    top:5%; left: 7%;
 }
 
-.work-area .work-container .work-title h1{
+.work-area .work-title h1{
     font-family: 'Montserrat', sans-serif; display: inline; margin:0;
     font-weight: 700;font-size: 9rem;  
 }
-.work-area .work-container .work-title span{
+.work-area  .work-title span{
     border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 15%;
 }
 
 
-.work-area .work-container .work-list{
+.work-area  .work-list{
+    position: absolute;z-index: 300;
+    width: 30%; top:25%;left: 10%;
 }
-.work-area  .work-container .work-list ul{
+.work-area  .work-list ul{
     font-family: 'Montserrat', sans-serif; padding:0;margin-bottom: 2%;
     font-weight: 700;font-size: 4rem; width: 100%; height: 100%; 
 }
 
-.work-area .work-container .work-list ul li{
-    list-style: none; cursor: pointer; margin-bottom: 1%; letter-spacing: 3px;
+.work-area .work-list ul li{
+    list-style: none; cursor: pointer; margin-bottom: 1%; letter-spacing: 3px; line-height: 90px;
 }
 
+.work-area .black-area{
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.645); position: absolute; z-index: 1; pointer-events: none;
+}
 
 .work-area .work-listImg{
     width: 100vw;
     height: 100vh;  position: relative; top:0;
-    overflow-y: scroll; z-index: 500;
+    overflow-y: scroll; 
 
     
 }
@@ -150,7 +156,8 @@ section:nth-of-type(4){
 
 
 .work-area .work-open{
-    position: absolute; visibility: hidden;
+    width: 100vw; height: 100vh; background: blanchedalmond;
+    position: absolute; z-index: 3000; overflow-y: scroll;
 }
 
 
