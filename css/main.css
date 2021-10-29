@@ -152,49 +152,57 @@ section:nth-of-type(4){
 
 
 .work-area .work-open {
-    width: 100vw; height: 100vh; background: rgb(10, 61, 23);
+    width: 100vw; height: 100vh; background: rgb(0, 0, 0);
     position: absolute; z-index: 3000; overflow-y: scroll;
 }
 .work-area .work-open .arrow-container {
     top:5%; display: flex; justify-content: center;
-    width: 100%;height: 10%;background-color: pink; position: absolute;  
+    width: 100%;height: 10%; position: absolute;  
 }
 .work-area .work-open .arrow-container .work-arrow{
     top:0; display: flex;  justify-content: space-between;
-    width: 90%;height: 100%;background-color: pink; position: absolute;  
+    width: 90%;height: 100%; position: absolute;  
 }
 
 .work-area .work-open .arrow-container .work-arrow .left-arrow {
    width: 5%; height: 100%; 
-   background-color: chartreuse; position: absolute; z-index: 500; left: 0;
+    position: absolute; z-index: 500; left: 5%;
 }
 .work-area .work-open .arrow-container .work-arrow .left-arrow div{
-    border-bottom:solid 2px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; 
-    border-left:solid 2px #FF5D2C; transform: rotate(45deg); left: 25%;
+    border-bottom:solid 3px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; 
+    border-left:solid 3px #FF5D2C; transform: rotate(45deg); left: 25%;
 }
 .work-area .work-open .arrow-container .work-arrow .right-arrow {
-    width: 5%; height: 100%; right: 0;
-    background-color: chartreuse; position: absolute; z-index: 500; 
+    width: 5%; height: 100%; right: 5%;
+     position: absolute; z-index: 500; 
  }
  .work-area .work-open .arrow-container .work-arrow .right-arrow div{
-    border-bottom:solid 2px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; right: 25%;
-    border-right:solid 2px #FF5D2C; transform: rotate(-45deg); 
+    border-bottom:solid 3px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; right: 25%;
+    border-right:solid 3px #FF5D2C; transform: rotate(-45deg); 
 }
 
 
 .work-area .work-open .work-intro{
     width: 100%; height: 100%; 
-    position: absolute; 
+    position: absolute; display: flex;
+    justify-content: center;align-items: center;justify-items: center;
 }
 
 .work-area .work-open .work-intro .worktitle{
-   width: 100%; height: 100%; position: absolute; 
+   width: 100%; height: 10%; position: absolute; top:5%; 
 }
 
 .work-area .work-open .work-intro .worktitle .title-container{
-    width: 100%;  height: 100%;
+    width: 100%;  height: 100%;  display: flex;justify-content: center;align-items: center;justify-items: center;
 }
-
+.work-area .work-open .work-intro .worktitle .title-container > h2{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 4rem; color: #FF5D2C;
+}
+.work-area .work-open .work-intro .work-contents{
+    width: 80%; height: 100%; position: absolute; top: 40%;
+    display: flex;
+}
 
 
 
