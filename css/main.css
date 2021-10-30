@@ -231,7 +231,7 @@ section:nth-of-type(4){
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;font-size: 1rem; color: #FF5D2C; 
     transition: all .3s ease-in-out;
-    display: inline-block;opacity: 0;text-decoration: none;
+    display: inline-block;opacity: 1;text-decoration: none;
     border: solid 2px #FF5D2C; padding:5px 20px;border-radius: 50px;
 
 }
@@ -241,9 +241,9 @@ section:nth-of-type(4){
     background-color: #fff;
 
 }
-.work-area .work-open .work-footer #back-to-top.visible {
+/* .work-area .work-open .work-footer #back-to-top.visible {
     opacity: 1;
-}
+} */
 
 
 
