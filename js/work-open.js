@@ -2,7 +2,7 @@ const sectionScroll = document.querySelector('.work-open');
 const btt = document.getElementById('back-to-top');
 let workListEl = document.querySelectorAll('.work-list li');
 // exit 버튼을 누르면 work-open창이 닫힌다.
-let exitBtn = document.querySelectorAll('.work-exit');
+const exitBtn = document.querySelector('.work-exit');
 let workListImage = document.querySelectorAll('.work-listImg div');
 const leftArrowBtn = document.querySelector('.left-arrow');
 const rightArrowBtn = document.querySelector('.right-arrow');
@@ -12,7 +12,6 @@ let introLength = workIntroArea.length;
 let currentIndex = 0;
 
 workListEl = Array.prototype.slice.call(workListEl);
-exitBtn = Array.prototype.slice.call(exitBtn);
 workIntroArea = Array.prototype.slice.call(workIntroArea);
 
 
@@ -24,6 +23,7 @@ rightArrowBtn.addEventListener('click',()=>{
         workIntroArea[i].classList.remove('active');
     }
     workIntroArea[currentIndex].classList.add('active');
+    
 })
 
 leftArrowBtn.addEventListener('click',()=>{
@@ -66,18 +66,16 @@ for(let i= 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('click',()=>{
         // sectionScroll.style.visibility = 'visible';
         sectionScroll.classList.add('active');
-        exitBtn[i].classList.add('active');
+        exitBtn.classList.add('active');
     })
 }
 
 
-for(let i= 0; i < exitBtn.length; i++){
-    exitBtn[i].addEventListener('click',()=>{
-        // sectionScroll.style.visibility='hidden' ;
-        sectionScroll.classList.remove('active');
-        exitBtn[i].classList.remove('active');
-    })
-}
+exitBtn.addEventListener('click',()=>{
+    // sectionScroll.style.visibility='hidden' ;
+    sectionScroll.classList.remove('active');
+    exitBtn.classList.remove('active');
+})
 
 // top버튼 눌렀을 때 상단으로 올라가는 함수 선언
 // 스크롤 양을 저장하는 변수
