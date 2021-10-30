@@ -199,10 +199,20 @@ section:nth-of-type(4){
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;font-size: 4rem; color: #FF5D2C;
 }
+.work-area .work-open .work-intro .worktitle .work-skill{
+    width: 100%;  height: 100%;  display: flex;justify-content: center;align-items: center;justify-items: center;
+}
+
+.work-area .work-open .work-intro .worktitle .work-skill span{
+      border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
+      border-radius: 50px; 
+}
+
 .work-area .work-open .work-intro .work-contents{
     width: 80%; height: 100%; position: absolute; top: 40%;
     display: flex;
 }
+
 
 
 
