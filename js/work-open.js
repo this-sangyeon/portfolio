@@ -34,20 +34,18 @@ function scrollToTop(){
 
 // ------------------------------------------ !
 
-sectionScroll.style.display ='none';
+sectionScroll.style.visibility='hidden' ;
 for(let i= 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('click',()=>{
-        sectionScroll.style.display = 'block';
+        sectionScroll.style.visibility = 'visible';
     })
-    workListEl[i].addEventListener('mouseover',()=>{
-        console.log('dd');
-    })
+    
 }
 
 
 for(let i= 0; i < exitBtn.length; i++){
     exitBtn[i].addEventListener('click',()=>{
-        sectionScroll.style.display = 'none';
+        sectionScroll.style.visibility='hidden' ;
     })
 }
 
