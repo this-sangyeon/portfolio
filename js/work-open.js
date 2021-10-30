@@ -13,9 +13,6 @@ workListEl = Array.prototype.slice.call(workListEl);
 exitBtn = Array.prototype.slice.call(exitBtn);
 
 
-
-
-
 // work-area
 
 for(let i = 0; i < workListEl.length; i++){
@@ -30,20 +27,26 @@ for(let i = 0; i < workListEl.length; i++){
 
 }
 
+// ------------------------------------------ !
 
 
 
+for(let i= 0; i < workListEl.length; i++){
+    workListEl[i].addEventListener('click',()=>{
+        // sectionScroll.style.visibility = 'visible';
+        sectionScroll.classList.add('active');
+        exitBtn[i].classList.add('active');
+    })
+}
 
 
-
-
-
-
-
-
-
-
-
+for(let i= 0; i < exitBtn.length; i++){
+    exitBtn[i].addEventListener('click',()=>{
+        // sectionScroll.style.visibility='hidden' ;
+        sectionScroll.classList.remove('active');
+        exitBtn[i].classList.remove('active');
+    })
+}
 
 // top버튼 눌렀을 때 상단으로 올라가는 함수 선언
 // 스크롤 양을 저장하는 변수
@@ -67,24 +70,6 @@ function scrollToTop(){
     }, 15);
 }
 
-// ------------------------------------------ !
 
-
-for(let i= 0; i < workListEl.length; i++){
-    workListEl[i].addEventListener('click',()=>{
-        // sectionScroll.style.visibility = 'visible';
-        sectionScroll.classList.add('active');
-        exitBtn[i].classList.add('active');
-    })
-}
-
-
-for(let i= 0; i < exitBtn.length; i++){
-    exitBtn[i].addEventListener('click',()=>{
-        // sectionScroll.style.visibility='hidden' ;
-        sectionScroll.classList.remove('active');
-        exitBtn[i].classList.remove('active');
-    })
-}
 
 
