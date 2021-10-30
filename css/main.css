@@ -98,23 +98,50 @@ section:nth-of-type(4){
 
 .work-area  .work-list{
     position: absolute;z-index: 300;
-    width: 30%; top:25%;left: 10%;
+    width: 45%; top:35%;left: 10%; 
 }
 .work-area  .work-list ul{
+    margin-top:0;
     font-family: 'Montserrat', sans-serif; padding:0;margin-bottom: 2%;
     font-weight: 700;font-size: 4rem; width: 100%; height: 100%; 
 }
 
 .work-area .work-list ul li{
-    list-style: none; cursor: pointer; margin-bottom: 1%; letter-spacing: 3px; line-height: 90px;
+    display: flex; align-items: center;  
+    list-style: none; cursor: pointer; margin-bottom: 3%; letter-spacing: 3px; 
 }
+.work-area .work-list ul li img{
+    position:absolute;
+    width: 150px; height: 150px;
+   right:0%; top:00%;
+} 
+.work-area .work-list ul li:first-of-type img{
+    position:absolute;
+   width: 150px; height: 150px;
+   right:0%; top:20%;
+} 
+.work-area .work-list ul li:nth-of-type(2) img{
+    position:absolute;
+    width: 150px; height: 150px;
+   right:0%; top:40%;
+} 
+.work-area .work-list ul li:nth-of-type(3) img{
+    position:absolute;
+    width: 150px; height: 150px;
+   right:0%; top:60%;
+} 
+.work-area .work-list ul li:nth-of-type(4) img{
+    position:absolute;
+    width: 150px; height: 150px;
+   right:0%; bottom:0%;
+} 
 
 .work-area .black-area{
-    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.645); position: absolute; z-index: 1; pointer-events: none;
+    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.645); position: absolute; z-index: 3; pointer-events: none;
 }
 
 .work-area .work-listImg{
-    width: 100vw;height: 100vh;  position: relative; top:0; overflow-y: scroll; 
+    width: 100vw;height: 100vh;  position: absolute; top:0;
 }
 .work-area .work-listImg .bg-workImg{ 
     width: 100vw;
@@ -122,31 +149,30 @@ section:nth-of-type(4){
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+}
+.work-area .work-listImg .bg-workImg.active{ 
+    z-index: 2; 
+    
 }
 .work-area .work-listImg .bg-workImg:first-child{ 
     background-image: url('../img/work/6sense-back.png');
-    position: sticky;
-    top: 0;
 }
 .work-area .work-listImg .bg-workImg:nth-child(2){ 
     background-image: url('../img/work/jw-back.png');
-    position: sticky;
-    top: 0;
+    
 }
 .work-area .work-listImg .bg-workImg:nth-child(3){ 
     background-image: url('../img/work/momentrip-back.png');
-    position: sticky;
-    top: 0;
+   
 }
 .work-area .work-listImg .bg-workImg:nth-child(4){ 
     background-image: url('../img/work/spain-back.png');
-    position: sticky;
-    top: 0;
+   
 }
 .work-area .work-listImg .bg-workImg:nth-child(5){ 
     background-image: url('../img/work/momentrip-back.png');
-    position: sticky;
-    top: 0;
+    
 }
 
 
@@ -188,8 +214,16 @@ section:nth-of-type(4){
 
 .work-open .work-intro{
     width: 100%; height: 100%; 
-    position: absolute; display: flex;
+    position: absolute; display: flex; 
     justify-content: center;align-items: center;justify-items: center;
+    visibility: hidden;
+    transition: ease 0.5s;
+    opacity: 0;
+}
+.work-open .work-intro.active{
+    visibility: visible;
+   transition: ease 0.5s;
+   opacity: 1;
 }
 
 .work-open .work-intro .worktitle{
@@ -203,12 +237,12 @@ section:nth-of-type(4){
     font-weight: 700;font-size: 4rem; color: #FF5D2C;
 }
 .work-open .work-intro .worktitle .work-skill{
-    width: 100%;  height: 100%;  display: flex;justify-content: center;align-items: center;justify-items: center;
+    width: 100%;  height: 100%;  display: flex; justify-content: center;align-items: center;justify-items: center;
 }
 
 .work-open .work-intro .worktitle .work-skill span{
       border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
-      border-radius: 50px; 
+      border-radius: 50px;  
 }
 
 .work-open .work-intro .work-contents{
@@ -217,13 +251,14 @@ section:nth-of-type(4){
 }
 
 .work-open .work-intro .work-exit{
-    position: fixed; top:50%; left: 2%; transform: rotate(-90deg);
-    font-family: 'Montserrat', sans-serif; display:none;
+    position: fixed; top:50%; left: 1%; transform: rotate(-90deg);
+    font-family: 'Montserrat', sans-serif; 
     font-weight: 700;font-size: 2rem; color: #FF5D2C; 
-    z-index:400 ;
+    z-index:1000 ;  transition: ease-in-out .1s; opacity: 0;
 }
 .work-open .work-intro .work-exit.active{
-    display:block;
+    left: 2%;visibility: visible; transition: ease-in-out .7s; opacity: 1;
+   color: #FF5D2C; 
 }
 
 .work-open .work-footer  {
