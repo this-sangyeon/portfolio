@@ -213,9 +213,37 @@ section:nth-of-type(4){
     display: flex;
 }
 
+.work-area .work-open .work-intro .work-exit{
+    position: absolute; top:50%; left: 2%; transform: rotate(-90deg);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 2rem; color: #FF5D2C; 
+}
+
+.work-area .work-open .work-footer  {
+    height: 20px;width: 100%;
+    position: absolute; bottom:-30%;
+    display: flex;
+    justify-content: center;align-items: center;justify-items: center;
+}
+
+.work-area .work-open .work-footer #back-to-top{
+    position: absolute; bottom:0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 1rem; color: #FF5D2C; 
+    transition: all .3s ease-in-out;
+    display: inline-block;opacity: 0;text-decoration: none;
+    border: solid 2px #FF5D2C; padding:5px 20px;border-radius: 50px;
+
+}
 
 
+.work-area .work-open .work-footer  #back-to-top:hover {
+    background-color: #fff;
 
+}
+.work-area .work-open .work-footer #back-to-top.visible {
+    opacity: 1;
+}
 
 
 
