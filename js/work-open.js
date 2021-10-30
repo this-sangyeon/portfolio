@@ -1,12 +1,47 @@
 const sectionScroll = document.querySelector('.work-open');
 const btt = document.getElementById('back-to-top');
-let workListEl = document.querySelectorAll('.work-list');
+let workListEl = document.querySelectorAll('.work-list li');
 // exit 버튼을 누르면 work-open창이 닫힌다.
-let exitBtn = document.querySelectorAll('.work-exit span');
+let exitBtn = document.querySelectorAll('.work-exit');
+
+
+const workListImgWrap = document.querySelector('.work-listImg');
+let workListImage = document.querySelectorAll('.bg-workImg');
 
 
 workListEl = Array.prototype.slice.call(workListEl);
 exitBtn = Array.prototype.slice.call(exitBtn);
+
+
+
+
+
+// work-area
+
+for(let i = 0; i < workListEl.length; i++){
+    workListEl[i].addEventListener('mouseenter', (e)=>{
+        // console.log('mouse', e.target);
+        workListEl[i].style.color="blue";
+    })
+    workListEl[i].addEventListener('mouseleave', (e)=>{
+        // console.log('mouse', e.target);
+        workListEl[i].style.color="white";
+    })
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,17 +69,21 @@ function scrollToTop(){
 
 // ------------------------------------------ !
 
-sectionScroll.style.visibility='hidden' ;
+
 for(let i= 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('click',()=>{
-        sectionScroll.style.visibility = 'visible';
+        // sectionScroll.style.visibility = 'visible';
+        sectionScroll.classList.add('active');
+        exitBtn[i].classList.add('active');
     })
 }
 
 
 for(let i= 0; i < exitBtn.length; i++){
     exitBtn[i].addEventListener('click',()=>{
-        sectionScroll.style.visibility='hidden' ;
+        // sectionScroll.style.visibility='hidden' ;
+        sectionScroll.classList.remove('active');
+        exitBtn[i].classList.remove('active');
     })
 }
 

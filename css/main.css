@@ -153,8 +153,11 @@ section:nth-of-type(4){
 
 .work-open {
     width: 100vw; height: 100vh; background: rgb(0, 0, 0);
-    position: absolute; z-index: 3000; overflow-y: scroll;
-    visibility: visible; top:0;
+    position: fixed; z-index: 300; overflow-y: scroll;
+    visibility: visible; top:0; right:-100%;transition: 0.5s ease-in-out;
+}
+.work-open.active {
+    width: 100vw; height: 100vh; transition: 0.5s ease-in-out; right:0;
 }
 .work-open .arrow-container {
     top:5%; display: flex; justify-content: center;
@@ -215,8 +218,12 @@ section:nth-of-type(4){
 
 .work-open .work-intro .work-exit{
     position: fixed; top:50%; left: 2%; transform: rotate(-90deg);
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif; display:none;
     font-weight: 700;font-size: 2rem; color: #FF5D2C; 
+    z-index:400 ;
+}
+.work-open .work-intro .work-exit.active{
+    display:block;
 }
 
 .work-open .work-footer  {
