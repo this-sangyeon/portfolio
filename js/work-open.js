@@ -29,7 +29,7 @@ function scrollToTop(){
         }else{
             clearInterval(scrollInterval);
         }
-     }, 15);
+    }, 15);
 }
 
 // ------------------------------------------ !
@@ -39,7 +39,6 @@ for(let i= 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('click',()=>{
         sectionScroll.style.visibility = 'visible';
     })
-    
 }
 
 
