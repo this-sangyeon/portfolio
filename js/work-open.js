@@ -42,7 +42,7 @@ leftArrowBtn.addEventListener('click',()=>{
 
 
 // work-area
-// workListImage[0].style.zIndex ="2";
+
 for(let i = 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('mouseenter', (e)=>{
         workListEl[i].style.color="#FF5D2C";
