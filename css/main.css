@@ -83,7 +83,7 @@ section:nth-of-type(4){
     font-weight: 700;font-size: 9rem;  
 }
 .work-area  .work-title span{
-    border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 10%;
+    border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 5%;
 }
 
 .work-area .work-title p{
@@ -122,12 +122,9 @@ section:nth-of-type(4){
     transform: rotate(20deg);
     width: 200px; height: 200px;
     right:5%;
-   pointer-events: none;
+    pointer-events: none;
     visibility: hidden;
     opacity: 0;
-   
-        
-   
 } 
 .work-area .work-list ul li img.active{
     width: 200px; height: 200px;
@@ -141,10 +138,10 @@ section:nth-of-type(4){
 }
 
 .work-area .work-listImg{
-    width: 100vw;height: 100vh;  position: absolute; top:0;
+    width: 100%;height: 100vh;  position: absolute; top:0;
 }
 .work-area .work-listImg .bg-workImg{ 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
