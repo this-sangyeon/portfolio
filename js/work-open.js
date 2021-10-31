@@ -1,6 +1,7 @@
 const sectionScroll = document.querySelector('.work-open');
 const btt = document.getElementById('back-to-top');
 let workListEl = document.querySelectorAll('.work-list li');
+let workMiniImg = document.querySelectorAll('.work-list li img');
 // exit 버튼을 누르면 work-open창이 닫힌다.
 const exitBtn = document.querySelector('.work-exit');
 let workListImage = document.querySelectorAll('.work-listImg div');
@@ -13,6 +14,7 @@ let currentIndex = 0;
 
 workListEl = Array.prototype.slice.call(workListEl);
 workIntroArea = Array.prototype.slice.call(workIntroArea);
+workMiniImg = Array.prototype.slice.call(workMiniImg);
 
 
 rightArrowBtn.addEventListener('click',()=>{
@@ -43,17 +45,16 @@ leftArrowBtn.addEventListener('click',()=>{
 // workListImage[0].style.zIndex ="2";
 for(let i = 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('mouseenter', (e)=>{
-        // console.log('mouse', e.target);
         workListEl[i].style.color="#FF5D2C";
         for(let j = 0; j < workListImage.length; j++ ){
             workListImage[j].classList.remove('active');
         }
         workListImage[i].classList.add('active');
+        workMiniImg[i].classList.add('active');
     })
     workListEl[i].addEventListener('mouseleave', (e)=>{
-        // console.log('mouse', e.target);
         workListEl[i].style.color ="white";
-        // workListImage[i].classList.remove('active');
+        workMiniImg[i].classList.remove('active');
     })
 }
 
