@@ -61,16 +61,17 @@ for(let i = 0; i < workListEl.length; i++){
 
 // ------------------------------------------ !
 
-
-
 for(let i= 0; i < workListEl.length; i++){
     workListEl[i].addEventListener('click',()=>{
         // sectionScroll.style.visibility = 'visible';
         sectionScroll.classList.add('active');
         exitBtn.classList.add('active');
+        for(let j = 0; j < workIntroArea.length; j++ ){
+            workIntroArea[j].classList.remove('active');
+        }
+        workIntroArea[i].classList.add('active');
     })
 }
-
 
 exitBtn.addEventListener('click',()=>{
     // sectionScroll.style.visibility='hidden' ;
