@@ -24,8 +24,12 @@ header .pf-list ul{
     display: flex; flex-direction: row; margin-right:0; align-items: center;  justify-content:center; 
 }
 header .pf-list ul li{
-    list-style: none;  margin-left: 7%; margin-right: 7%; 
+    list-style: none;  margin-left: 7%; margin-right: 7%;  cursor: pointer;
+}
+header .pf-list ul li > a{
     font-family: 'Montserrat', sans-serif; cursor: pointer;
     font-weight: 700;font-size: 1rem; color:#FF5D2C;
+    text-decoration: none;
 }
+
 

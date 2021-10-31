@@ -72,10 +72,6 @@ section:nth-of-type(4){
     display: flex; flex-direction: column; 
 } 
 
-/* .work-area .work-container{
-     height: 100vh;  
-    position: absolute; top:10%; left: 7%; z-index: 300;
-}  */
 .work-area .work-title{
     width: 80%; height: 20%; margin-bottom:5%; position: absolute; z-index: 300;
     color:#FF5D2C; display: flex; align-items: center; justify-items: center;
@@ -87,10 +83,19 @@ section:nth-of-type(4){
     font-weight: 700;font-size: 9rem;  
 }
 .work-area  .work-title span{
-    border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 15%;
+    border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 10%;
 }
 
-
+.work-area .work-title p{
+    font-family: 'Montserrat', sans-serif; display: inline; margin:0;
+    font-weight: 200;font-size: 1rem;  text-align: justify;
+}
+.work-area  .workimoge img:first-of-type{
+    width: 300px;position: absolute; bottom: 10%;z-index: 100;right: 5%;
+}
+.work-area  .workimoge img:last-of-type{
+    width: 400px;position: absolute; bottom: 10%;z-index: 90;right: 5%;
+}
 .work-area  .work-list{
     position: absolute;z-index: 300;
     width: 45%; top:35%;left: 10%; 
@@ -108,38 +113,21 @@ section:nth-of-type(4){
 }
 .work-area .work-list ul li img{
     position:absolute;
+    transform: rotate(20deg);
     width: 200px; height: 200px;
     right:5%;
    pointer-events: none;
     visibility: hidden;
+    opacity: 0;
    
 } 
 .work-area .work-list ul li img.active{
-transform: rotate(20deg);
     width: 200px; height: 200px;
+    right:4%;opacity: 1;
     visibility: visible;
    pointer-events: none;
    transition: ease .3s;
-} 
-.work-area .work-list ul li:first-of-type img{
- 
-   
-} 
-.work-area .work-list ul li:nth-of-type(2) img{
-  
-  
-} 
-.work-area .work-list ul li:nth-of-type(3) img{
-   
-  
-} 
-.work-area .work-list ul li:nth-of-type(4) img{
-   
-} 
-.work-area .work-list ul li:last-of-type img{
-    
- } 
-
+}  
 .work-area .black-area{
     width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.645); position: absolute; z-index: 3; pointer-events: none;
 }
@@ -199,7 +187,7 @@ transform: rotate(20deg);
 }
 
 .work-open .arrow-container .work-arrow .left-arrow {
-   width: 5%; height: 100%; 
+    width: 5%; height: 100%; 
     position: absolute; z-index: 500; left: 5%;
 }
 .work-open .arrow-container .work-arrow .left-arrow div{
