@@ -31,7 +31,7 @@ section:nth-of-type(4){
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: rgb(3, 94, 92);
+   
 }
 .main-area{
     width: 100%; height: 100%;  
@@ -337,28 +337,60 @@ section:nth-of-type(4){
 .about-area .about-container .aboutImoge  .svg-area svg:last-of-type{
     width: 50px; fill:#FFF500; bottom:10%; left: 25%;animation: rotate 5s infinite linear;
 }
-
-
 .about-area .about-container .aboutContent{
-    width: 65%; height: 100%; background-color: rgb(255, 161, 20);
+    width: 65%; height: 100%; 
     display: flex; flex-direction: column; position: relative;
 }
 .about-area .about-container .aboutContent .aboutText{
-    padding:5%;width: 90%; height: 40%; position: absolute;
+    padding:2% 5% 2% 5%;width: 90%; height: 40%;
 }
 .about-area .about-container .aboutContent .aboutText div {
     font-family: 'Montserrat', sans-serif; display: inline; margin-bottom:2%;
-    font-weight: 700;font-size: 2rem;  
+    font-weight: 700;font-size: 2rem;  color:#FF5D2C; 
 }
 .about-area .about-container .aboutContent .aboutText p {
     font-family: 'Noto Sans KR', sans-serif; display: inline-block;margin-bottom:2%;
     font-weight: 300;font-size: 1rem;  text-align: justify;
 }
 
+.about-area .about-container  .aboutContent  .aboutAnother{
+    width: 90%; height: 60%; 
+    bottom: 0;   padding: 5% 5% 5% 5%; display: flex;
+}
 
+.about-area .about-container  .aboutContent  .aboutAnother .utility{
+   width: 50%;height: 100%;  border-right:solid 2px #FF5D2C; 
+}
+.about-area .about-container  .aboutContent  .aboutAnother .utility .title{
+    font-family: 'Montserrat', sans-serif; display: inline; color:#FF5D2C; 
+    font-weight: 700;font-size: 2rem;  text-transform: uppercase;
+}
+.about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list{
+   width: 100%; height: 100%; padding-top:30px;
+}
+.about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul{
+    width: 100%; padding:0;
+ }
+ .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li{
+    width: 100%; height: 20%; font-family: 'Montserrat', sans-serif; font-weight: 300;font-size: 1rem; 
+    list-style: none;  display: flex; align-items: center; margin-bottom:5%;
+ }
+ .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > div:first-of-type{
+    width: 50px;height: 50px; background-color: tomato; border-radius: 20px; display: inline-block;
+ }
+ .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > div:nth-of-type(2){
+    display: inline-block;
+ }
+ .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > p{
+    display: inline-block; margin: 0;
+ }
 
-
-
-
-
+ .about-area .about-container  .aboutContent  .aboutAnother .tmi{
+    width: 50%;height: 100%;   margin-left: 5%;
+ }
+ .about-area .about-container  .aboutContent  .aboutAnother .tmi .title{
+     font-family: 'Montserrat', sans-serif;  margin-bottom:2%;
+     font-weight: 700;font-size: 2rem;  text-transform: uppercase;
+     color:#FF5D2C; 
+ }
 
