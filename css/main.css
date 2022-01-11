@@ -70,12 +70,13 @@ section:nth-of-type(4){
     width: 100%; height: 100%;  
     position: relative; 
     display: flex; flex-direction: column; 
+    justify-content: center; align-items: center;
 } 
 
 .work-area .work-title{
-    width: 80%; height: 20%; margin-bottom:5%; position: absolute; z-index: 300;
+    width: 80%; height: 20%; z-index: 300;
     color:#FF5D2C; display: flex; align-items: center; justify-items: center;
-    top:10%; left: 7%;
+    top:5%; left: 7%;
 }
 
 .work-area .work-title h1{
@@ -103,8 +104,8 @@ section:nth-of-type(4){
 }
 
 .work-area  .work-list{
-    position: absolute;z-index: 300;
-    width: 45%; top:35%;left: 10%; 
+   z-index: 300;
+    width: 80%;
 }
 .work-area  .work-list ul{
     margin-top:0;
@@ -113,22 +114,20 @@ section:nth-of-type(4){
 }
 
 .work-area .work-list ul li{
-    align-items: center; 
-    display: inline-flex;   
-    list-style: none; cursor: pointer; margin-bottom: 3%; letter-spacing: 3px; 
+    align-items: center; position: relative;z-index: 3;
+    list-style: none; cursor: pointer; letter-spacing: 3px; margin-bottom: 1%;
 }
 .work-area .work-list ul li img{
     position:absolute;
     transform: rotate(20deg);
-    width: 200px; height: 200px;
-    right:5%;
+    width: 200px; height: 200px; 
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
 } 
 .work-area .work-list ul li img.active{
     width: 200px; height: 200px;
-    right:2%;opacity: 1;
+   opacity: 1;  z-index: 1;
     visibility: visible;
    pointer-events: none;
    transition: ease .5s;
@@ -155,105 +154,84 @@ section:nth-of-type(4){
     z-index: 2; 
     transition: ease-in-out 0.3s;
     opacity: 1;
-    
+
 }
-.work-area .work-listImg .bg-workImg:first-child{ 
+.work-area .work-listImg .bg-workImg:first-of-type{ 
     background-image: url('../img/work/6sense-back.png');
 }
-.work-area .work-listImg .bg-workImg:nth-child(2){ 
+.work-area .work-listImg .bg-workImg:nth-of-type(2){ 
     background-image: url('../img/work/jw-back.png');
     
 }
-.work-area .work-listImg .bg-workImg:nth-child(3){ 
+.work-area .work-listImg .bg-workImg:nth-of-type(3){ 
     background-image: url('../img/work/momentrip-back.png');
    
 }
-.work-area .work-listImg .bg-workImg:nth-child(4){ 
+.work-area .work-listImg .bg-workImg:nth-of-type(4){ 
     background-image: url('../img/work/spain-back.png');
    
 }
-.work-area .work-listImg .bg-workImg:nth-child(5){ 
-    background-image: url('../img/work/momentrip-back.png');
-    
+.work-area .work-listImg .bg-workImg:nth-of-type(5){ 
+    background-image: url('../img/work/momentrip-back.png');  
+}
+.work-area .work-listImg .bg-workImg:last-of-type{ 
+    background-image: url('../img/work/momentrip-back.png');  
 }
 
 
 
 .work-open {
-    width: 100vw; height: 100vh; background: rgb(0, 0, 0);
-    position: fixed; z-index: 300; overflow-y: scroll;
+    width: 100%; height: 100%; background: rgb(0, 0, 0);
+    position: fixed; z-index: 5000; overflow-y: scroll;
     visibility: visible; top:0; right:-100%;transition: 0.5s ease-in-out;
 }
-.work-open.active {
-    width: 100vw; height: 100vh; transition: 0.5s ease-in-out; right:0;
-}
-.work-open .arrow-container {
-    top:5%; display: flex; justify-content: center;
-    width: 100%;height: 10%; position: absolute;  
-}
-.work-open .arrow-container .work-arrow{
-    top:0; display: flex;  justify-content: space-between;
-    width: 90%;height: 100%; position: absolute;  
-}
-
-.work-open .arrow-container .work-arrow .left-arrow {
-    width: 5%; height: 100%; 
-    position: absolute; z-index: 500; left: 5%;
-}
-.work-open .arrow-container .work-arrow .left-arrow div{
-    border-bottom:solid 3px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; 
-    border-left:solid 3px #FF5D2C; transform: rotate(45deg); left: 25%;
-}
-.work-open .arrow-container .work-arrow .right-arrow {
-    width: 5%; height: 100%; right: 5%;
-     position: absolute; z-index: 500; 
- }
-.work-open .arrow-container .work-arrow .right-arrow div{
-    border-bottom:solid 3px #FF5D2C; width: 50px;height: 50px; position: absolute; top:25%; right: 25%;
-    border-right:solid 3px #FF5D2C; transform: rotate(-45deg); 
-}
-
-
 .work-open .work-intro{
-    width: 100%; height: 100%; 
-    position: absolute; display: flex; 
-    justify-content: center;align-items: center;justify-items: center;
-    visibility: hidden;
-    transition: ease 0.5s;
-    opacity: 0;
+    width: 100%; height: 1500px;  position:absolute;
+   display: flex; flex-direction: column;
+   
 }
-.work-open .work-intro.active{
-    visibility: visible;
-   transition: ease 0.5s;
-   opacity: 1;
+.work-open.active {
+    width: 100%; height: 100%; transition: 0.5s ease-in-out; right:0;
 }
 
-.work-open .work-intro .worktitle{
-   width: 100%; height: 10%; position: absolute; top:5%; 
+
+.arrow-container{
+    width: 100%; height: 20%;position: relative;
 }
-.work-open .work-intro .worktitle .title-container{
-    width: 100%;  height: 100%;  display: flex;justify-content: center;align-items: center;justify-items: center;
+.work-arrow{
+    display: flex;width: 90%; height: 70%; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);
+    justify-content: center; align-items: center;
+} 
+.work-arrow button {
+    width: 10%; height: 70%; outline: none; border:none; background: none; position: relative;  cursor: pointer;
 }
-.work-open .work-intro .worktitle .title-container > h2{
-    font-family: 'Montserrat', sans-serif; 
+.work-arrow button div {
+   width: 50px; height: 50px; border-bottom: solid 1px white; border-left: solid 1px white; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
+}
+.work-arrow button:last-of-type div {
+    transform: translate(-50%, -50%) rotate(45deg) scale(-1);
+ }
+.work-skill{
+    width: 100%;  height: 5%;  display: flex; justify-content: center;align-items: center;justify-items: center;background-color: #288d5e;
+}
+.title-container{
+    width: 80%; position: relative;
+}
+.title-container h2{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;
+    font-family: 'Montserrat', sans-serif;  text-align: center;
     font-weight: 700;font-size: 4rem; color: #FF5D2C;
 }
-.work-open .work-intro .worktitle .work-skill{
-    width: 100%;  height: 100%;  display: flex; justify-content: center;align-items: center;justify-items: center;
-}
-
-.work-open .work-intro .worktitle .work-skill span{
+.work-skill span{
       border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
       border-radius: 50px;  
 }
-
-.work-open .work-intro .work-contents{
+.work-contents{
     width: 80%; height: 100%; position: absolute; top: 40%;
-    display: flex;
+    display: flex; flex-direction: column;
 }
-
-.work-open .work-exit {
-    width: 10%; background-color: none;
+.work-exit {
+    width: 10%; height: 100%; background-color: none;
     position: fixed; top:50%; left: 0%; transform: rotate(-90deg) translateX(50%);
     z-index:1000;  transition: ease-in-out .1s; opacity: 0;
 }
@@ -268,9 +246,9 @@ section:nth-of-type(4){
 
 .work-open .work-footer  {
     height: 20px;width: 100%;
-    position: absolute; bottom:-30%;
+    position: absolute; bottom:30%;
     display: flex;
-    justify-content: center;align-items: center;justify-items: center;
+   
 }
 
 .work-open .work-footer #back-to-top{
@@ -301,7 +279,7 @@ section:nth-of-type(4){
 .about-area .about-title{
     width: 80%; height: 20%; margin-bottom:5%; position: absolute; z-index: 300;
     color:#FF5D2C; display: flex; align-items: center; justify-items: center;
-    top:10%; right: 0%;
+    top:5%; right: 0%;
 }
 .about-area .about-title h1{
     font-family: 'Montserrat', sans-serif; display: inline; margin:0;
@@ -313,7 +291,7 @@ section:nth-of-type(4){
 }
 
 .about-area .about-container .aboutImoge{
-    width: 35%; height: 100%; position: relative;
+    width: 40%; height: 100%; position: relative;
     display: flex; justify-content: center; align-items: center; justify-items: center;
 }
 .about-area .about-container .aboutImoge  img{
@@ -338,7 +316,7 @@ section:nth-of-type(4){
     width: 50px; fill:#FFF500; bottom:10%; left: 25%;animation: rotate 5s infinite linear;
 }
 .about-area .about-container .aboutContent{
-    width: 65%; height: 100%; 
+    width: 60%; height: 100%; 
     display: flex; flex-direction: column; position: relative;
 }
 .about-area .about-container .aboutContent .aboutText{
@@ -379,7 +357,7 @@ section:nth-of-type(4){
     width: 50px;height: 50px; background-color: tomato; border-radius: 20px; display: inline-block;
  }
  .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > div:nth-of-type(2){
-    display: inline-block;
+    display: inline-block; margin-left: 5%;
  }
  .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > p{
     display: inline-block; margin: 0;
