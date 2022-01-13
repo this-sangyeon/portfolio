@@ -95,19 +95,19 @@ section{
     position: fixed; z-index: 5000; overflow-y: scroll;
     visibility: visible; top:0; 
     /* right:-100%; */
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; display: none;
 }
 .work-open-area{
-    position: relative;  width: 100%; height: 1500px; background: blue;
+    position: relative;  width: 100%; height: 2000px;
 }
 .work-open-wrap{
-    width: 100%; height: 1500px;position:absolute; background: blueviolet;
+    width: 100%; height: 100%;position:absolute;
 }
 .work-title-container{
-    position: relative; width: 100%;height: 20%; background: brown;
+    position: relative; width: 100%;height: 15%;
 }
 .arrow-btn-area{
-    width: 90%; height: 90%; background: rgb(196, 84, 84);top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;
+    width: 90%; height: 90%;top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;
 }
 .work-arrow-btn{
     width: 100%; height: 100%; display: flex; 
@@ -116,7 +116,7 @@ section{
     width: 10%; height: 100%; position: relative;border:none; outline: none; background: none;
 }
 .work-arrow-btn button div{
-    width: 50px; height: 50px; border-bottom: solid 1px white; border-left: solid 1px white; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
+    width: 50px; height: 50px; border-bottom: solid 1px #FF5D2C; border-left: solid 1px #FF5D2C; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
 }
 .work-arrow-btn button:last-of-type div{
     transform: translate(-50%, -50%) rotate(45deg) scale(-1);
@@ -127,10 +127,10 @@ section{
 .work-list-name h3{
     position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;
     font-family: 'Montserrat', sans-serif;text-align: center;
-    font-weight: 700;font-size:5rem; width: 90%;
+    font-weight: 700;font-size:5rem; width: 90%;color:#FF5D2C;
 }
 .work-sub-container{
-    position: relative; width: 100%;height: 5%; background: rgb(42, 165, 104);
+    position: relative; width: 100%;height: 2%; 
 }
 .work-sub-content{
     width: 50%; height: 100%; position: absolute; display: flex;top:50%; left:50%; transform: translate(-50%, -50%);
@@ -160,12 +160,50 @@ section{
     margin: 0; font-family: 'Montserrat', sans-serif;text-align: center; color:#FF5D2C;
     font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;
 }
+
+
 .work-contents{
-    width: 100%;height: 70%;
+    width: 100%;height: 80%;position: relative;
+}
+.work-content-wrap{
+    width: 70%; height: 90%; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column;
+}
+.work-wraps{
+    width: 100%; height: 25%; position: relative;  display: flex; margin-bottom: 1%;
+}
+.work-img-wrap{
+    width: 45%; position: relative;; height: 100%;
+}
+.work-img-wrap img{
+   object-fit: cover; width: 100%; height: 100%;top:50%; left:50%; transform: translate(-50%, -50%);position: absolute;
+}
+.work-wraps .work-texts{
+    width: 55%;position: relative; margin-left:5%;
+    display: flex; justify-content: center; flex-direction: column;
+}
+.work-footer{
+    height: 20px;
+    position: absolute; bottom:5%; right: 7%;
+    display: flex;
+}
+.work-footer #back-to-top{
+    position: absolute; bottom:0;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 1rem; color: #FF5D2C; 
+    transition: all .3s ease-in-out;
+    display: inline-block;opacity: 1;text-decoration: none;
+    border: solid 2px #FF5D2C; padding:5px 20px;border-radius: 50px;
+
 }
 
+
+
+
+
+
 .work-close-btn{
-    width: 50px; height: 50px; position:absolute; background: blueviolet; top:2%; right:2%; z-index: 100;
+    width: 50px; height: 50px; position:absolute; top:2%; right:2%; z-index: 100;
 }
 .work-close-btn > button{
     width: 100%;height: 100%; position: relative; border:none; outline: none; background: none;
@@ -178,11 +216,74 @@ section{
 }
 article{
     width: 100%;height: 100%;position: absolute; background:rgba(0, 0, 0, 0.171); top:0; display: none; z-index: 200;
+    
 }
-/* article:first-of-type{
-    display: block;
+article:first-of-type{
+    display: block; 
+}
+.about-container {
+    width: 100%; height:100%; background:rgba(0, 0, 0, 0.171);  margin: 0;
+    display: flex; align-items: center; justify-content: center; justify-items: center;
+}
+.about-area {
+    width: 90%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;
+}
+.about-close-btn{
+    position: absolute;
+}
+.about-title{
+        width: 100%; height: 20%; position: relative;
+}
+.about-title h2{
+    position: absolute; top:50%; right: 2%; transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
+}
+.about-contents{
+    width: 90%; height: 80%; display: flex; margin-left:5% ;
+}
+.about-images{
+    width: 45%;height: 100%; position: relative;
+}
+.about-images img{
+    top:50%; left:50%; transform: translate(-50%, -70%); position: absolute;
+}
+.about-texts{
+    width: 55%;height: 100%; position: relative; display: flex; flex-direction: column;
+}
+.about-name{
+    width: 100%; height: 25%; position: relative;
+}
+.about-name h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
+}
+.about-name p{
+    font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem;line-height: 1.5rem;
+}
+.about-hahTags{
+    width: 100%; height: 25%; position: relative;
+}
+.about-hahTags h3{
+     font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
+}
+.about-hahTags p{
+    font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem; line-height: 1.5rem;
+}
+.about-utilitys{
+    width: 90%;height: 50%; position: relative;display: flex; 
+}
+.utility-list {
+    width: 50%;height: 100%;
+}
+.utility-list h3, .about-tmis h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;
+}
+.about-tmis{
+    width: 50%;height: 100%;
+}
+/* .about-tmis h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
 } */
-
 footer{
     width: 100%; height: 5%; position: absolute; bottom:0; 
     border-top: solid 1px #FF5D2C;
