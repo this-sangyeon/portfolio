@@ -206,7 +206,7 @@ section{
     width: 50px; height: 50px; position:absolute; top:2%; right:2%; z-index: 100;
 }
 .work-close-btn > button{
-    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none;
+    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none;cursor: pointer;
 }
 .work-close-btn > button > span{
   position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
@@ -219,8 +219,9 @@ article{
     
 }
 article:first-of-type{
-    display: block; 
+    display: none; 
 }
+
 .about-container {
     width: 100%; height:100%; background:rgba(0, 0, 0, 0.171);  margin: 0;
     display: flex; align-items: center; justify-content: center; justify-items: center;
@@ -229,13 +230,22 @@ article:first-of-type{
     width: 90%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;
 }
 .about-close-btn{
-    position: absolute;
+    position: absolute; width: 70px; height: 70px; top:5%; left: 3%; cursor: pointer; z-index: 100;
+}
+.about-close-btn button{
+    position: relative; width: inherit; height: inherit; border:none; outline: none; background: none;cursor: pointer;
+}
+.about-close-btn button span{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
+}
+.about-close-btn button > span:first-of-type{
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 .about-title{
         width: 100%; height: 20%; position: relative;
 }
 .about-title h2{
-    position: absolute; top:50%; right: 2%; transform: translateY(-50%);
+    position: absolute; top:50%; right: 3%; transform: translateY(-50%);
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
 }
@@ -245,45 +255,120 @@ article:first-of-type{
 .about-images{
     width: 45%;height: 100%; position: relative;
 }
+.svg-area {
+    width: 100%; height: 100%; position: absolute}
+.svg-area svg{
+    top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;   width: 100%; 
+}
+.svg-area svg:first-of-type{
+    top:40%; left:40%; transform: translate(-50%, -50%); width: 450px;fill:white; 
+}
+.svg-area svg:nth-of-type(2){
+    width: 30px;  top:10%; left: 10%; transform: translate(-50%, -50%);fill:#00FF89; 
+}
+.svg-area svg:nth-of-type(3){
+    width: 50px; fill:#FFBA00; top:80%; right: 0%;transform: translate(0%, 0%);
+}
+.svg-area svg:last-of-type{
+    width: 40px; fill:#FFBA00; top:20%; left: 80%;transform: translate(0%, 0%);
+}
 .about-images img{
-    top:50%; left:50%; transform: translate(-50%, -70%); position: absolute;
+    top:50%; left:50%; transform: translate(-50%, -70%); position: absolute; width: 300px;
+}
+.about-images img:nth-of-type(2){
+    top:20%; left:25%; transform: translate(-50%, -50%) rotate(-10deg); position: absolute; width: 200px;
+}
+.about-images img:nth-of-type(3){
+    top:60%; left:70%; transform: translate(-50%, -50%); position: absolute; width: 200px;
 }
 .about-texts{
     width: 55%;height: 100%; position: relative; display: flex; flex-direction: column;
 }
-.about-name{
+.about-name, .about-hahTags{
     width: 100%; height: 25%; position: relative;
 }
-.about-name h3{
-    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
+.about-name h3, .about-hahTags h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;
 }
-.about-name p{
+.about-name p, .about-hahTags p{
     font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem;line-height: 1.5rem;
 }
-.about-hahTags{
-    width: 100%; height: 25%; position: relative;
-}
-.about-hahTags h3{
-     font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
-}
-.about-hahTags p{
-    font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem; line-height: 1.5rem;
-}
+
 .about-utilitys{
     width: 90%;height: 50%; position: relative;display: flex; 
 }
 .utility-list {
-    width: 50%;height: 100%;
+    width: 60%;height: 100%;
 }
 .utility-list h3, .about-tmis h3{
     font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;
 }
 .about-tmis{
-    width: 50%;height: 100%;
+    width: 40%;height: 100%;
 }
-/* .about-tmis h3{
-    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2.5rem; color: #FF5D2C; text-transform: uppercase;
-} */
+
+article:last-of-type{
+    display: block; 
+}
+.contact-container{
+    width: 100%; height:100%; background:rgba(0, 0, 0, 0.637);  margin: 0;
+    display: flex; align-items: center; justify-content: center; justify-items: center;
+}
+.contact-area{
+    width: 70%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;
+}
+.contact-close-btn{
+    position: absolute; width: 70px; height: 70px; top:5%; right: 3%; cursor: pointer; z-index: 100;
+}
+.contact-close-btn button{
+    position: relative; width: inherit; height: inherit; border:none; outline: none; background: none;cursor: pointer;
+}
+.contact-close-btn button span{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
+}
+.contact-close-btn button > span:first-of-type{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.contact-title{
+    width: 100%; height: 40%; position: relative;
+}
+.contact-title h2{
+position: absolute; top:50%; left: 3%; transform: translateY(-50%);
+font-family: 'Montserrat', sans-serif;  text-transform: uppercase;
+font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
+}
+.contact-content{
+    width: 100%; height: 60%; position: relative; 
+    
+}
+.contact-content ul{
+    width: 80%; position: absolute; top:30%; left:50%; transform: translate(-50%, -50%); margin: 0; padding: 0;
+    display: flex; justify-content: space-around; height: 30%;
+}
+.contact-content ul li{
+ list-style: none;  height: 100%; display: flex; flex-direction: column;
+}
+.contact-content ul li h4{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase; height: 50%;
+}
+.contact-content ul li p{
+    font-family: 'Montserrat', sans-serif;  font-weight: 300;font-size: 1.2rem; color: #FF5D2C; letter-spacing: 1px;
+}
+.contact-imoges{
+    position: absolute; bottom: 40%; left:-10%; width: 100%;
+}
+.contact-imoges-wrap {
+    position: relative;width: 100%;
+}
+.contact-imoges img{
+    width: 250px; z-index: 100; position: absolute;
+}
+.contact-imoges svg{
+    width: 50px; position: absolute;fill:#00FF89;  margin-top:0%; left: 2%; transform: rotate(-20deg);
+}
+
 footer{
     width: 100%; height: 5%; position: absolute; bottom:0; 
     border-top: solid 1px #FF5D2C;
