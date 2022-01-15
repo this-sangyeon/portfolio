@@ -46,18 +46,36 @@ section{
     position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.788);z-index: 2;
 }
 .bg-workImg{
-    position: absolute; width: 100%; height: 100%;
+    position: absolute; width: 100%; height: 100%;  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.bg-workImg.active{
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+    visibility: visible;
 }
 .bg-workImg:first-of-type{
     background-image: url('../img/work/6sense-back.png');
 }
 .bg-workImg:nth-of-type(2){ 
     background-image: url('../img/work/jw-back.png');
-    
 }
 .bg-workImg:nth-of-type(3){ 
     background-image: url('../img/work/momentrip-back.png');
-   
+}
+.bg-workImg:nth-of-type(4){ 
+    background-image: url('../img/work/momentrip-back.png');
+}
+.bg-workImg:nth-of-type(5){ 
+    background-image: url('../img/work/momentrip-back.png');
+}
+.bg-workImg:last-of-type{ 
+    background-image: url('../img/work/momentrip-back.png');
 }
 .work-list-wrap{
     width: 100%; height: 70%; position: absolute;  bottom: 0;z-index: 2;
@@ -76,7 +94,7 @@ section{
     width: 100%; height: 90%; margin: 0; padding: 0;  
 }
 .work-title ul li{
-   list-style: none;  position: relative; display: flex;  width: 100%; height:  13%; 
+   list-style: none;  position: relative; display: flex;  width: 100%; height:  13%; cursor: pointer; 
 }
 .work-title ul li p {
    margin: none; margin: 0; 
@@ -85,6 +103,15 @@ section{
 }
 .work-title ul li .img-wrap {
     height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.work-title ul li .img-wrap.active {
+    height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    transition: ease-in-out 0.3s;
+    visibility: visible;
+    opacity: 1;
 }
 .work-title ul li .img-wrap img{
   object-fit: cover;height: 100%;
@@ -215,19 +242,24 @@ section{
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 article{
-    width: 100%;height: 100%;position: absolute; background:rgba(0, 0, 0, 0.171); top:0; display: none; z-index: 200;
-    
+    width: 100%;height: 100%;position: absolute; background:rgb(255, 255, 255); top:0; display: none; z-index: 200;
 }
-article:first-of-type{
-    display: none; 
+article.active{
+    display: block;
 }
 
 .about-container {
-    width: 100%; height:100%; background:rgba(0, 0, 0, 0.171);  margin: 0;
+    width: 100%; height:100%;  margin: 0; opacity: 0;transition: 0.3s ease-in-out;
     display: flex; align-items: center; justify-content: center; justify-items: center;
 }
+.about-container.active {
+    opacity: 1;transition: 0.3s ease-in-out;
+}
 .about-area {
-    width: 90%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;
+    width: 0%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column; transition: 0.3s ease-in-out;  opacity: 0;
+}
+.about-area.active {
+    width: 90%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column; transition: 0.3s ease-in-out; opacity: 1;
 }
 .about-close-btn{
     position: absolute; width: 70px; height: 70px; top:5%; left: 3%; cursor: pointer; z-index: 100;
@@ -307,15 +339,21 @@ article:first-of-type{
     width: 40%;height: 100%;
 }
 
-article:last-of-type{
+/* article:last-of-type{
     display: block; 
-}
+} */
 .contact-container{
-    width: 100%; height:100%; background:rgba(0, 0, 0, 0.637);  margin: 0;
+    width: 100%; height:100%;   margin: 0; opacity: 0;transition: 0.3s ease-in-out;visibility:hidden;
     display: flex; align-items: center; justify-content: center; justify-items: center;
 }
+.contact-container.active{
+    opacity: 1;transition: 0.3s ease-in-out; visibility:visible;
+}
 .contact-area{
-    width: 70%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;
+    width: 0%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;  transition: 0.3s ease-in-out;  opacity: 0;
+}
+.contact-area.active{
+    width: 70%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;  transition: 0.3s ease-in-out;  opacity: 1;
 }
 .contact-close-btn{
     position: absolute; width: 70px; height: 70px; top:5%; right: 3%; cursor: pointer; z-index: 100;
