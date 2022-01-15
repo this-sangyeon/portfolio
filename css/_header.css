@@ -4,8 +4,11 @@
 header{
     margin:0;
     background-color:none;
-    position: fixed;z-index: 9999;left: 0;top:0;width: 50%;height: 95%; 
+    position: fixed;z-index: 9999;left: 0;top:0; height: 95%;
     display: flex; flex-direction: column; justify-content: space-between;
+}
+header.active{
+ display: none;
 }
 .logo {
     width: 100px; height: 100px; position: relative;
@@ -18,17 +21,20 @@ header{
 }
 
 .pf-list{
-    width: 100%;height: 10%; 
+    height: 10%;  position: absolute; bottom: 0; display: block;
+}
+.pf-list.active{
+    display: none;
 }
 .pf-list ul{
-    width: 100%;height: 100%;  margin:0 0 0 20%; padding: 0;
+    width: 100%;height: 100%;  margin:0 0 0 30%; padding: 0;display: flex;
 }
 .pf-list ul li{
-    list-style: none; margin-right: 5%; position: relative;  width: 80%;
-     display: inline;
+    list-style: none; margin-right: 10%; position: relative;  width: 80%;
+     display: inline; cursor: pointer; 
 }
 .pf-list ul li a{
     color:#FF5D2C;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;font-size:1.5rem; width: 100%;
+    font-weight: 700;font-size:1.5rem; 
 }
