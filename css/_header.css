@@ -27,12 +27,17 @@ header.active{
     display: none;
 }
 .pf-list ul{
-    width: 100%;height: 100%;  margin:0 0 0 30%; padding: 0;display: flex;
+    position: relative;
+    width: 100%;height: 100%;  margin:0 0 0 30%; padding: 0;display: flex; opacity: 1; visibility: visible; top:10%; transition: 0.5s ease-in-out;
+}
+.pf-list ul.active{
+    opacity: 0; visibility:hidden; top:20%; position: relative;
 }
 .pf-list ul li{
     list-style: none; margin-right: 10%; position: relative;  width: 80%;
      display: inline; cursor: pointer; 
 }
+
 .pf-list ul li a{
     color:#FF5D2C;
     font-family: 'Montserrat', sans-serif;
