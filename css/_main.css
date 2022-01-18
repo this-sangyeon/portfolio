@@ -141,10 +141,10 @@ section{
     width: 90%; height: 90%;top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;
 }
 .work-arrow-btn{
-    width: 100%; height: 100%; display: flex; 
+    width: 100%; height: 100%; display: flex; cursor: pointer;
 }
 .work-arrow-btn button{
-    width: 10%; height: 100%; position: relative;border:none; outline: none; background: none;
+    width: 10%; height: 100%; position: relative;border:none; outline: none; background: none;cursor: pointer;
 }
 .work-arrow-btn button div{
     width: 50px; height: 50px; border-bottom: solid 1px #FF5D2C; border-left: solid 1px #FF5D2C; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
@@ -157,7 +157,7 @@ section{
 }
 .work-list-name h3{
     position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;
-    font-family: 'Montserrat', sans-serif;text-align: center;
+    font-family: 'Montserrat', sans-serif;text-align: center; text-transform: uppercase;
     font-weight: 700;font-size:5rem; width: 90%;color:#FF5D2C;
 }
 .work-sub-container{
@@ -181,7 +181,7 @@ section{
     width: 30%;height: 100%; position: relative;
 }
 .work-link-wrap button{
-    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none;
+    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none; cursor: pointer;
 }
 .work-link-wrap button > span{
     border: solid 2px #FF5D2C; padding:5px 30px; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
@@ -413,10 +413,14 @@ font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
 
 footer{
     width: 100%; height: 5%; position: absolute; bottom:0; 
-    border-top: solid 1px #FF5D2C;
+    /* border-top: solid 1px #FF5D2C; */
 }
+
 .footer-wrap{
-    position: relative; width: 100%; height: 100%; 
+    position: relative; width: 100%; height: 100%;   border-top: solid 1px #FF5D2C; opacity: 1; transition: 0.5s ease-in-out;
+}
+.footer-wrap.active{
+    position: relative; width: 100%; height: 100%;   border-top: solid 1px #FF5D2C;opacity: 0;transition: 0.5s ease-in-out;
 }
 .footer-wrap p{
     position: absolute;transform: translate(-50%,-50%); top:50%; left:50%; margin: 0;

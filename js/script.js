@@ -1,5 +1,5 @@
 const bgWorkImages = document.querySelectorAll('.bg-workImg');
-const workList = document.querySelectorAll('.work-list .work-title ul li');
+let workList = document.querySelectorAll('.work-list .work-title ul li');
 const workListImages = document.querySelectorAll('.img-wrap');
 
 const wonkOpenContainer = document.querySelector('.wonk-open-container');
@@ -26,10 +26,13 @@ const contactArea = document.querySelector('.contact-area');
 const contactContainer = document.querySelector('.contact-container');
 const contactCloseBtn = document.querySelector('.contact-close-btn button');
 
+const footer = document.querySelector('footer > .footer-wrap');
+
 
 workContentWrap = Array.prototype.slice.call(workContentWrap);
 workTextsFirst = Array.prototype.slice.call(workTextsFirst);
 pfList = Array.prototype.slice.call(pfList);
+workList = Array.prototype.slice.call(workList);
 
 
 let workInfoLink =[
@@ -39,7 +42,8 @@ let workInfoLink =[
         textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        title:'MONSTER ENERGY'
     },
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
@@ -51,7 +55,8 @@ let workInfoLink =[
         ],
         textTwo:'액션 스릴러 영화 “존 윅”을dfsdfsdfsddfsd 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        title:'JOHN WICK'
     },
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
@@ -59,7 +64,8 @@ let workInfoLink =[
         textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 ㄴㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러ddddfsdf 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 ㅎㄷㄹㅇㄴㅎㄱㄷㅎㅇㅇㅇㄹㄴㅇㄹ웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 ㅎㄷㄹㅇㄴㅎㄱㄷㅎㅇㅇㅇㄹㄴㅇㄹ웹사이트를 제작하였습니다.',
+        title:'sixth sense'
     },
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
@@ -67,7 +73,8 @@ let workInfoLink =[
         textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        title:'momentrip'
     },
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
@@ -75,7 +82,8 @@ let workInfoLink =[
         textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        title:'about spain'
     },
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
@@ -83,12 +91,15 @@ let workInfoLink =[
         textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
+        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        title:'what yam!'
     }
 ]
+let isClick = false;
 let ListLength = workList.length;
 currentIndex = 0;
 workIndex = 0;
+
 for(let i = 0; i < pfList.length; i++){
     pfList[i].addEventListener('click', (e)=>{
         let targetEl = e.currentTarget;
@@ -159,14 +170,42 @@ for(let i = 0; i < workList.length; i++){
     })
 }
 for(let i = 0; i < workList.length; i++){
-    workList[i].addEventListener('click',()=>{
+    workList[i].addEventListener('click',(e)=>{
+        let targetEls = e.currentTarget;
+        workIndex = workList.indexOf(targetEls);
+        console.log('workIndex', workIndex);
         wonkOpenContainer.classList.add('active');
         pfListWrap.classList.add('active');
+        footer.classList.add('active');
+
+        for(let i = 0; i <  workContentWrap.length; i++ ){
+            workContentWrap[i].setAttribute('src',workInfoLink[workIndex].img[i]);
+        }
+        for(let i = 0; i < workTextsFirst.length; i++){
+            workTextsFirst[i].innerHTML = workInfoLink[workIndex].textOne[i];
+        }
+        workTextSecond.innerText = workInfoLink[workIndex].textTwo;
+        workTextThird.innerText = workInfoLink[workIndex].textThree;
+        workTextFourth.innerText = workInfoLink[workIndex].textFour;
+        workSiteLink.setAttribute('href', workInfoLink[workIndex].link);
+        workTitleName.innerText = workInfoLink[workIndex].title;
         
     })
     workCloseBtn.addEventListener('click',()=>{
         wonkOpenContainer.classList.remove('active');
         pfListWrap.classList.remove('active');
+        setTimeout(()=>{
+            footer.classList.remove('active');
+        },500);
+
+        if(isClick === false){
+            workIndex = 0;
+            workTextSecond.innerText = workInfoLink[workIndex].textTwo;
+            workTextThird.innerText = workInfoLink[workIndex].textThree;
+            workTextFourth.innerText = workInfoLink[workIndex].textFour;
+            workSiteLink.setAttribute('href', workInfoLink[workIndex].link);
+            workTitleName.innerText = workInfoLink[workIndex].title;
+        }
     })
 }
 
@@ -185,6 +224,7 @@ workPrevBtn.addEventListener('click',(e)=>{
     workTextThird.innerText = workInfoLink[currentIndex].textThree;
     workTextFourth.innerText = workInfoLink[currentIndex].textFour;
     workSiteLink.setAttribute('href', workInfoLink[currentIndex].link);
+    workTitleName.innerText = workInfoLink[currentIndex].title;
 
 });
 
@@ -203,4 +243,5 @@ workNextBtn.addEventListener('click',()=>{
     workTextThird.innerText = workInfoLink[currentIndex].textThree;
     workTextFourth.innerText = workInfoLink[currentIndex].textFour;
     workSiteLink.setAttribute('href',workInfoLink[currentIndex].link);
+    workTitleName.innerText = workInfoLink[currentIndex].title;
 });
