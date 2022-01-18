@@ -3,6 +3,7 @@ let workList = document.querySelectorAll('.work-list .work-title ul li');
 const workListImages = document.querySelectorAll('.img-wrap');
 
 const wonkOpenContainer = document.querySelector('.wonk-open-container');
+const workOpenArea = document.querySelector('.work-open-area');
 const workCloseBtn = document.querySelector('.work-close-btn > button');
 const workPrevBtn = document.querySelector('.work-arrow-btn > button:first-of-type');
 const workNextBtn = document.querySelector('.work-arrow-btn > button:last-of-type');
@@ -27,7 +28,6 @@ const contactContainer = document.querySelector('.contact-container');
 const contactCloseBtn = document.querySelector('.contact-close-btn button');
 
 const footer = document.querySelector('footer > .footer-wrap');
-
 
 workContentWrap = Array.prototype.slice.call(workContentWrap);
 workTextsFirst = Array.prototype.slice.call(workTextsFirst);
@@ -61,7 +61,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 ㄴㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
+        textOne:['Day6의 "The Book of us gravity"를 주제로 웹사이트를 제작하였습니다.','Day6만의 다양한 음악성과 감각을 잘 보여주는 color를 사용하였으며 <br>fix된 원페이지 안에서 메뉴와 버튼을 통해 다양한 인터렉션을 구성하였습니다.<br>뮤직 플레이어, 비디오 원형 슬라이드 등 처음 시도해본 만큼 <br>어려움을 많이 겪었지만 그 어려움을 통해 한껏 성장함이 엿보이는 웹사이트 입니다.', 'ㅇㅇ'],
         textTwo:'액션 스릴러ddddfsdf 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 ㅎㄷㄹㅇㄴㅎㄱㄷㅎㅇㅇㅇㄹㄴㅇㄹ웹사이트를 제작하였습니다.',
@@ -70,7 +70,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
+        textOne:['순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다.','여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '졸업작품이며 팀작업으로 진행되었으며 기획 및 일러스트작업 및 웹 페이지를 제작하였습니다'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
@@ -79,7 +79,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg', 'img/work/workimg/johnwick2.jpg'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
+        textOne:[' 가장 가보고 싶어했던 나라 "SPAIN"을 주제로 웹사이트를 제작하였습니다.','스페인의 관광지, 3대축제에 알아보는 페이지를 제작하였고...어쩌구저쩌구 ', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
@@ -97,8 +97,11 @@ let workInfoLink =[
 ]
 let isClick = false;
 let ListLength = workList.length;
-currentIndex = 0;
-workIndex = 0;
+let workIndex = 0;
+let scrollPos;
+let docHeight; 
+
+docHeight = Math.max(wonkOpenContainer.scrollHeight,wonkOpenContainer.offsetHeight);
 
 for(let i = 0; i < pfList.length; i++){
     pfList[i].addEventListener('click', (e)=>{
@@ -189,59 +192,63 @@ for(let i = 0; i < workList.length; i++){
         workTextFourth.innerText = workInfoLink[workIndex].textFour;
         workSiteLink.setAttribute('href', workInfoLink[workIndex].link);
         workTitleName.innerText = workInfoLink[workIndex].title;
+
+        workPrevBtn.addEventListener('click',(e)=>{
+            console.log('click_left');
+            workIndex =  workIndex - 1;
+            workIndex < 0 && ( workIndex = ListLength - 1);
+            console.log(workIndex,'workIndex');
+            for(let i = 0; i <  workContentWrap.length; i++ ){
+                workContentWrap[i].setAttribute('src',workInfoLink[ workIndex].img[i]);
+            }
+            for(let i = 0; i < workTextsFirst.length; i++){
+                workTextsFirst[i].innerHTML = workInfoLink[workIndex].textOne[i];
+            }
+            workTextSecond.innerText = workInfoLink[ workIndex].textTwo;
+            workTextThird.innerText = workInfoLink[ workIndex].textThree;
+            workTextFourth.innerText = workInfoLink[ workIndex].textFour;
+            workSiteLink.setAttribute('href', workInfoLink[ workIndex].link);
+            workTitleName.innerText = workInfoLink[ workIndex].title;
         
-    })
-    workCloseBtn.addEventListener('click',()=>{
-        wonkOpenContainer.classList.remove('active');
-        pfListWrap.classList.remove('active');
-        setTimeout(()=>{
-            footer.classList.remove('active');
-        },500);
-
-        if(isClick === false){
-            workIndex = 0;
-            workTextSecond.innerText = workInfoLink[workIndex].textTwo;
-            workTextThird.innerText = workInfoLink[workIndex].textThree;
-            workTextFourth.innerText = workInfoLink[workIndex].textFour;
-            workSiteLink.setAttribute('href', workInfoLink[workIndex].link);
-            workTitleName.innerText = workInfoLink[workIndex].title;
-        }
-    })
+        });
+    }) 
 }
-
-workPrevBtn.addEventListener('click',(e)=>{
-    console.log('click_left');
-    currentIndex = currentIndex - 1;
-    currentIndex < 0 && (currentIndex = ListLength - 1);
-    console.log(currentIndex,'currentIndex');
-    for(let i = 0; i <  workContentWrap.length; i++ ){
-        workContentWrap[i].setAttribute('src',workInfoLink[currentIndex].img[i]);
-    }
-    for(let i = 0; i < workTextsFirst.length; i++){
-        workTextsFirst[i].innerHTML = workInfoLink[currentIndex].textOne[i];
-    }
-    workTextSecond.innerText = workInfoLink[currentIndex].textTwo;
-    workTextThird.innerText = workInfoLink[currentIndex].textThree;
-    workTextFourth.innerText = workInfoLink[currentIndex].textFour;
-    workSiteLink.setAttribute('href', workInfoLink[currentIndex].link);
-    workTitleName.innerText = workInfoLink[currentIndex].title;
-
-});
-
 workNextBtn.addEventListener('click',()=>{
     console.log('click_right');
-    currentIndex = currentIndex + 1;
-    currentIndex > ListLength - 1 && (currentIndex = 0);
-    console.log(currentIndex,'currentIndex');
+    workIndex =  workIndex + 1;
+    workIndex > ListLength - 1 && ( workIndex = 0);
+    console.log( workIndex,'workIndex');
     for(let i = 0; i <  workContentWrap.length; i++ ){
-        workContentWrap[i].setAttribute('src',workInfoLink[currentIndex].img[i]);
+        workContentWrap[i].setAttribute('src',workInfoLink[ workIndex].img[i]);
     }
     for(let i = 0; i < workTextsFirst.length; i++){
-        workTextsFirst[i].innerHTML = workInfoLink[currentIndex].textOne[i];
+        workTextsFirst[i].innerHTML = workInfoLink[ workIndex].textOne[i];
     }
-    workTextSecond.innerText = workInfoLink[currentIndex].textTwo;
-    workTextThird.innerText = workInfoLink[currentIndex].textThree;
-    workTextFourth.innerText = workInfoLink[currentIndex].textFour;
-    workSiteLink.setAttribute('href',workInfoLink[currentIndex].link);
-    workTitleName.innerText = workInfoLink[currentIndex].title;
+    workTextSecond.innerText = workInfoLink[ workIndex].textTwo;
+    workTextThird.innerText = workInfoLink[ workIndex].textThree;
+    workTextFourth.innerText = workInfoLink[ workIndex].textFour;
+    workSiteLink.setAttribute('href',workInfoLink[ workIndex].link);
+    workTitleName.innerText = workInfoLink[ workIndex].title;
 });
+workCloseBtn.addEventListener('click',()=>{
+    wonkOpenContainer.classList.remove('active');
+    pfListWrap.classList.remove('active');
+    setTimeout(()=>{
+        footer.classList.remove('active');
+    },500);    
+})
+
+btt.addEventListener('click', (e)=>{
+    e.preventDefault();
+    scrollToTop();
+});
+function scrollToTop(){
+    var scrollInterval = setInterval(()=>{
+        scrollPos = wonkOpenContainer.scrollTop;
+        if(scrollPos != 0){
+            wonkOpenContainer.scrollBy(0, -55);
+        }else{
+            clearInterval(scrollInterval);
+        }
+    }, 15);
+}
