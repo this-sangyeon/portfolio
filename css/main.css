@@ -60,22 +60,22 @@ section{
     visibility: visible;
 }
 .bg-workImg:first-of-type{
-    background-image: url('../img/work/6sense-back.png');
+    background-image: url('../img/work/workBgsection1.png'); 
 }
 .bg-workImg:nth-of-type(2){ 
-    background-image: url('../img/work/jw-back.png');
+    background-image: url('../img/work/workBgsection2.png');
 }
 .bg-workImg:nth-of-type(3){ 
-    background-image: url('../img/work/momentrip-back.png');
+    background-image: url('../img/work/workBgsection3.png');
 }
 .bg-workImg:nth-of-type(4){ 
-    background-image: url('../img/work/momentrip-back.png');
+    background-image: url('../img/work/workBgsection4.png');
 }
 .bg-workImg:nth-of-type(5){ 
-    background-image: url('../img/work/momentrip-back.png');
+    background-image: url('../img/work/workBgsection5.png');
 }
 .bg-workImg:last-of-type{ 
-    background-image: url('../img/work/momentrip-back.png');
+    background-image: url('../img/work/workBgsection6.png');
 }
 .work-list-wrap{
     width: 100%; height: 70%; position: absolute;  bottom: 0;z-index: 2;
@@ -102,13 +102,13 @@ section{
    font-weight: 700;font-size:2rem; width: 90%; position: absolute; top:50%; transform: translateY(-50%);
 }
 .work-title ul li .img-wrap {
-    height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    height: 150px; width: auto;position: absolute; left:-30%;  top:50%; transform: translateY(-30%) rotate(-20deg);
     transition: ease-in-out 0.3s;
     visibility: hidden;
     opacity: 0;
 }
 .work-title ul li .img-wrap.active {
-    height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    height: 200px; width: auto;position: absolute; left:-30%;  top:50%; transform: translateY(-50%) rotate(0deg);
     transition: ease-in-out 0.3s;
     visibility: visible;
     opacity: 1;
