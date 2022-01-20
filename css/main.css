@@ -5,253 +5,220 @@ html,
 body{
     width: 100%; height: 100%;
     margin: 0; padding:0;
-    background-color: black;
     color:white;
-    scroll-behavior: smooth;
+    position: relative;
 }
+
 
 section{
     width: 100%;
     height: 100%;
-    position: relative;
+    position: fixed; 
 }
-section:nth-of-type(2){
-    width: 100%;
-    height: 30%;
-    background-color: rgb(0, 0, 0);
-    position: relative;
+.portfolio-container{
+    width: 100%; height: 100%; position:absolute; top:0; background: black;
 }
-section:nth-of-type(3){
-    width: 100%;
-    height: 100%;
-    position: relative;
-    
+.main-container{
+    width: 100%; height: 100%; position:relative;
 }
-section:nth-of-type(4){
-    width: 100%;
-    height: 100%;
-    position: relative;
-   
+.main-title{
+    width: 100%; height: 30%; position:relative; z-index: 1; z-index: 100;
+    display: flex;  flex-direction: column; justify-content: center;
 }
-.main-area{
-    width: 100%; height: 100%;  
-    position: absolute;
+.main-title h1{
+    margin:0 0 0 10%; font-family: 'Montserrat', sans-serif;
+    font-weight: 700;font-size:9rem; text-transform: capitalize;color:#FF5D2C; 
 }
-
-.main-area .main-title{
-    width: 50%;height: 20%;  position: absolute; top:15%; left:7%;
-    display: flex; align-items: center; 
+.main-title p{
+    margin: 0;  font-family: 'Noto Sans KR', sans-serif; margin:0 0 0 12%;
+    font-weight: 300;font-size: 2rem; 
 }
-.main-area .main-title h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;font-size: 9rem; color:#FF5D2C; 
-} 
-.main-area .main-title img{
-    width: 100px; height: 100px; margin-right:5%; margin-left:5%; margin-top:3%;
-    animation: rotate 5s infinite linear;
-
-} 
-.main-area .sub-title{
-    position: absolute; bottom: 2%; display: flex; width: 100%; height: 10%; align-items: center; justify-content: center; justify-items: center;
+.work-container{
+    width: 100%; height: 100%;  top:0;position: absolute; top:0;
 }
-.main-area .sub-title p{
-    font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color:#FF5D2C; 
+.work-area{
+    width: 100%; height: 100%; position:relative; 
 }
-.main-area .sub-title span{
-    border-bottom: solid 2px #FF5D2C; width: 350px; margin-right:2.5%; margin-left:2.5%;
+.work-bg-section{
+    position: absolute; width: 100%; height: 100%;
 }
-
-@keyframes rotate{
-    from { transform: rotate(0deg); }
-    from { transform: rotate(360deg); }
+.bg-brack-area{
+    position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.788);z-index: 2;
 }
-/* work */
-.work-area {
-    width: 100%; height: 100%;  
-    position: relative; 
-    display: flex; flex-direction: column; 
-    justify-content: center; align-items: center;
-} 
-
-.work-area .work-title{
-    width: 80%; height: 20%; z-index: 300;
-    color:#FF5D2C; display: flex; align-items: center; justify-items: center;
-    top:5%; left: 7%;
-}
-
-.work-area .work-title h1{
-    font-family: 'Montserrat', sans-serif; display: inline; margin:0;
-    font-weight: 700;font-size: 8rem;  
-}
-.work-area  .work-title span{
-    border-right:solid 2px #FF5D2C; height: 50%; margin:0 5% 0 5%;
-}
-
-.work-area .work-title p{
-    font-family: 'Montserrat', sans-serif; display: inline; margin:0;
-    font-weight: 200;font-size: 1rem;  text-align: justify;
-}
-.work-area  .workimoge img{
-    width: 300px;position: absolute; bottom: 10%;z-index: 100;right: 5%;
-}
-.work-area  .workimoge .svg-area svg:first-of-type{
-    width: 400px;position: absolute; bottom: 10%;z-index: 90;right: 5%;
-    fill:#ffffff;
-}
-.work-area  .workimoge .svg-area svg:last-of-type{
-    width: 70px;position: absolute; bottom: 35%;z-index: 90;right: 25%;
-    fill:#00FF9A; animation: rotate 5s infinite linear;
-}
-
-.work-area  .work-list{
-   z-index: 300;
-    width: 80%;
-}
-.work-area  .work-list ul{
-    margin-top:0;
-    font-family: 'Montserrat', sans-serif; padding:0;margin-bottom: 2%;
-    font-weight: 700;font-size: 4rem; width: 100%; height: 100%; 
-}
-
-.work-area .work-list ul li{
-    align-items: center; position: relative;z-index: 3;
-    list-style: none; cursor: pointer; letter-spacing: 3px; margin-bottom: 1%;
-}
-.work-area .work-list ul li img{
-    position:absolute;
-    transform: rotate(20deg);
-    width: 200px; height: 200px; 
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-} 
-.work-area .work-list ul li img.active{
-    width: 200px; height: 200px;
-   opacity: 1;  z-index: 1;
-    visibility: visible;
-   pointer-events: none;
-   transition: ease .5s;
-}  
-.work-area .black-area{
-    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.645); position: absolute; z-index: 3; pointer-events: none;
-}
-
-.work-area .work-listImg{
-    width: 100%;height: 100vh;  position: absolute; top:0;
-}
-.work-area .work-listImg .bg-workImg{ 
-    width: 100%;
-    height: 100vh;
-    background-position: center;
+.bg-workImg{
+    position: absolute; width: 100%; height: 100%;  background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     transition: ease-in-out 0.3s;
+    visibility: hidden;
     opacity: 0;
-
 }
-.work-area .work-listImg .bg-workImg.active{ 
-    z-index: 2; 
+.bg-workImg.active{
     transition: ease-in-out 0.3s;
     opacity: 1;
-
+    visibility: visible;
 }
-.work-area .work-listImg .bg-workImg:first-of-type{ 
+.bg-workImg:first-of-type{
     background-image: url('../img/work/6sense-back.png');
 }
-.work-area .work-listImg .bg-workImg:nth-of-type(2){ 
+.bg-workImg:nth-of-type(2){ 
     background-image: url('../img/work/jw-back.png');
-    
 }
-.work-area .work-listImg .bg-workImg:nth-of-type(3){ 
+.bg-workImg:nth-of-type(3){ 
     background-image: url('../img/work/momentrip-back.png');
-   
 }
-.work-area .work-listImg .bg-workImg:nth-of-type(4){ 
-    background-image: url('../img/work/spain-back.png');
-   
+.bg-workImg:nth-of-type(4){ 
+    background-image: url('../img/work/momentrip-back.png');
 }
-.work-area .work-listImg .bg-workImg:nth-of-type(5){ 
-    background-image: url('../img/work/momentrip-back.png');  
+.bg-workImg:nth-of-type(5){ 
+    background-image: url('../img/work/momentrip-back.png');
 }
-.work-area .work-listImg .bg-workImg:last-of-type{ 
-    background-image: url('../img/work/momentrip-back.png');  
+.bg-workImg:last-of-type{ 
+    background-image: url('../img/work/momentrip-back.png');
 }
-
-
-
-.work-open {
-    width: 100%; height: 100%; background: rgb(0, 0, 0);
-    position: fixed; z-index: 5000; overflow-y: scroll;
-    visibility: visible; top:0; right:-100%;transition: 0.5s ease-in-out;
+.work-list-wrap{
+    width: 100%; height: 70%; position: absolute;  bottom: 0;z-index: 2;
 }
-.work-open .work-intro{
-    width: 100%; height: 1500px;  position:absolute;
-   display: flex; flex-direction: column;
-   
+.work-list{
+    width: 100%; height: 100%;  position: relative;
 }
-.work-open.active {
-    width: 100%; height: 100%; transition: 0.5s ease-in-out; right:0;
-}
-
-
-.arrow-container{
-    width: 100%; height: 20%;position: relative;
-}
-.work-arrow{
-    display: flex;width: 90%; height: 70%; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);
-    justify-content: center; align-items: center;
-} 
-.work-arrow button {
-    width: 10%; height: 70%; outline: none; border:none; background: none; position: relative;  cursor: pointer;
-}
-.work-arrow button div {
-   width: 50px; height: 50px; border-bottom: solid 1px white; border-left: solid 1px white; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
-}
-.work-arrow button:last-of-type div {
-    transform: translate(-50%, -50%) rotate(45deg) scale(-1);
- }
-.work-skill{
-    width: 100%;  height: 5%;  display: flex; justify-content: center;align-items: center;justify-items: center;background-color: #288d5e;
-}
-.title-container{
-    width: 80%; position: relative;
-}
-.title-container h2{
-    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;
-    font-family: 'Montserrat', sans-serif;  text-align: center;
-    font-weight: 700;font-size: 4rem; color: #FF5D2C;
-}
-.work-skill span{
-      border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
-      border-radius: 50px;  
-}
-.work-contents{
-    width: 80%; height: 100%; position: absolute; top: 40%;
+.work-title {
+    width: 35%; height: 100%; position: absolute; right: 0; top:0;
     display: flex; flex-direction: column;
 }
-.work-exit {
-    width: 10%; height: 100%; background-color: none;
-    position: fixed; top:50%; left: 0%; transform: rotate(-90deg) translateX(50%);
-    z-index:1000;  transition: ease-in-out .1s; opacity: 0;
+.work-title .work-title-name{
+    width: 100%; height: 10%;
 }
-.work-open .work-exit > p{
-    font-family: 'Montserrat', sans-serif;  text-align: center;
-    font-weight: 700;font-size: 2rem; color: #FF5D2C; margin:0;
+.work-title ul{
+    width: 100%; height: 90%; margin: 0; padding: 0;  
 }
-.work-open .work-exit.active{
-    left: 1%;;visibility: visible; transition: ease-in-out .7s; opacity: 1;
-   color: #FF5D2C; 
+.work-title ul li{
+   list-style: none;  position: relative; display: flex;  width: 100%; height:  13%; cursor: pointer; 
+}
+.work-title ul li p {
+   margin: none; margin: 0; 
+   font-family: 'Montserrat', sans-serif;left:15%;z-index: 3;
+   font-weight: 700;font-size:2rem; width: 90%; position: absolute; top:50%; transform: translateY(-50%);
+}
+.work-title ul li .img-wrap {
+    height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.work-title ul li .img-wrap.active {
+    height: 150px; width: auto;position: absolute; left:-10%;  top:50%; transform: translateY(-30%) rotate(-20deg);
+    transition: ease-in-out 0.3s;
+    visibility: visible;
+    opacity: 1;
+}
+.work-title ul li .img-wrap img{
+  object-fit: cover;height: 100%;
 }
 
-.work-open .work-footer  {
-    height: 20px;width: 100%;
-    position: absolute; bottom:30%;
+.wonk-open-container{
+    width: 100%; height: 100%; background: rgb(0, 0, 0);
+    position: fixed; z-index: 5000; overflow-y: scroll;
+    visibility: visible; top:0; 
+    right:-100%;
+    transition: 0.5s ease-in-out;  visibility: hidden; opacity: 0;
+}
+.wonk-open-container.active{
+    right:0%;
+    transition: 0.5s ease-in-out; visibility: visible; opacity: 1;
+}
+.work-open-area{
+    position: relative;  width: 100%; height: 2000px;
+}
+.work-open-wrap{
+    width: 100%; height: 100%;position:absolute;
+}
+.work-title-container{
+    position: relative; width: 100%;height: 15%;
+}
+.arrow-btn-area{
+    width: 90%; height: 90%;top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;
+}
+.work-arrow-btn{
+    width: 100%; height: 100%; display: flex; cursor: pointer;
+}
+.work-arrow-btn button{
+    width: 10%; height: 100%; position: relative;border:none; outline: none; background: none;cursor: pointer;
+}
+.work-arrow-btn button div{
+    width: 50px; height: 50px; border-bottom: solid 1px #FF5D2C; border-left: solid 1px #FF5D2C; position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg);
+}
+.work-arrow-btn button:last-of-type div{
+    transform: translate(-50%, -50%) rotate(45deg) scale(-1);
+}
+.work-list-name{
+    width: 80%; height: 100%; position: relative;
+}
+.work-list-name h3{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); margin: 0;
+    font-family: 'Montserrat', sans-serif;text-align: center; text-transform: uppercase;
+    font-weight: 700;font-size:5rem; width: 90%;color:#FF5D2C;
+}
+.work-sub-container{
+    position: relative; width: 100%;height: 2%; 
+}
+.work-sub-content{
+    width: 50%; height: 100%; position: absolute; display: flex;top:50%; left:50%; transform: translate(-50%, -50%);
+}
+.work-skills{
+   width: 70%;height: 100%; position: relative; display: flex; align-items: center;
+}
+.work-skills span{
+    border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
+    border-radius: 50px;  
+}
+.work-skills p {
+    margin: 0; font-family: 'Montserrat', sans-serif;text-align: center;
+    font-weight: 700;font-size:2rem; color:#FF5D2C;
+}
+.work-link-wrap{
+    width: 30%;height: 100%; position: relative;
+}
+.work-link-wrap button{
+    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none; cursor: pointer;
+}
+.work-link-wrap button > span{
+    border: solid 2px #FF5D2C; padding:5px 30px; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
+    border-radius: 50px;  
+}
+.work-link-wrap button span a{
+    margin: 0; font-family: 'Montserrat', sans-serif;text-align: center; color:#FF5D2C;
+    font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;
+}
+
+
+.work-contents{
+    width: 100%;height: 80%;position: relative;
+}
+.work-content-wrap{
+    width: 70%; height: 90%; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column;
+}
+.work-wraps{
+    width: 100%; height: 25%; position: relative;  display: flex; margin-bottom: 1%;
+}
+.work-img-wrap{
+    width: 45%; position: relative;; height: 100%;
+}
+.work-img-wrap img{
+   object-fit: contain; width: 100%; height: 100%;top:50%; left:50%; transform: translate(-50%, -50%);position: absolute;
+}
+.work-wraps .work-texts{
+    width: 55%;position: relative; margin-left:10%;
+    display: flex; justify-content: center; flex-direction: column;
+}
+.work-footer{
+    height: 20px;
+    position: absolute; bottom:0%;left: 50%; transform: translateX(-50%);
     display: flex;
-   
 }
-
-.work-open .work-footer #back-to-top{
+.work-footer #back-to-top{
     position: absolute; bottom:0;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;font-size: 1rem; color: #FF5D2C; 
@@ -262,113 +229,199 @@ section:nth-of-type(4){
 }
 
 
-.work-open .work-footer  #back-to-top:hover {
-    background-color: #fff;
-
-}
 
 
 
-/* about */
-.about-area{
-    width: 100%; height: 100%;  
-    position: relative; 
-    display: flex; flex-direction: column; align-items: center;
-    justify-items: center; 
+
+.work-close-btn{
+    width: 50px; height: 50px; position:fixed; top:50%; right:2%; z-index: 100;transform: translateY( -50%)
 }
-.about-area .about-title{
-    width: 80%; height: 20%; margin-bottom:5%; position: absolute; z-index: 300;
-    color:#FF5D2C; display: flex; align-items: center; justify-items: center;
-    top:5%; right: 0%;
+.work-close-btn > button{
+    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none;cursor: pointer;
 }
-.about-area .about-title h1{
-    font-family: 'Montserrat', sans-serif; display: inline; margin:0;
-    font-weight: 700;font-size: 8rem;  
+.work-close-btn > button > span{
+  position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
 }
-.about-area .about-container{
-    width: 85%; height: 65%; display: flex; 
-    position: absolute; bottom:5%; 
+.work-close-btn > button > span:first-of-type{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+article{
+    width: 100%;height: 100%;position: absolute; background:rgb(255, 255, 255); top:0; display: none; z-index: 200;
+}
+article.active{
+    display: block;
 }
 
-.about-area .about-container .aboutImoge{
-    width: 40%; height: 100%; position: relative;
-    display: flex; justify-content: center; align-items: center; justify-items: center;
+.about-container {
+    width: 100%; height:100%;  margin: 0; opacity: 0;transition: 0.5s ease-in-out; visibility: hidden;
+    display: flex; align-items: center; justify-content: center; justify-items: center;
 }
-.about-area .about-container .aboutImoge  img{
-    width: 300px; position: absolute; z-index: 500; right: 10%; transform: rotate(-10deg);
+.about-container.active {
+    opacity: 1;transition: 0.5s ease-in-out; visibility: visible;
 }
-.about-area .about-container .aboutImoge  .svg-area{
-     width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; justify-items: center;
+.about-area {
+    width: 90%; height:0%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column; transition: 0.3s ease-in-out;  opacity: 0;visibility: hidden;
 }
-.about-area .about-container .aboutImoge  .svg-area svg{
-   position: absolute;
+.about-area.active {
+    width: 90%; height:90%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column; transition: 0.3s ease-in-out; opacity: 1;visibility: visible;
 }
-.about-area .about-container .aboutImoge  .svg-area svg:first-of-type{
-    width: 500px; fill:white; top:5%; left: -10%; transform: rotate(-10deg);
- }
-.about-area .about-container .aboutImoge  .svg-area svg:nth-of-type(2){
-    width: 30px; fill:#FFBA00; top:10%; left: 10%; animation: rotate 3s infinite linear;
+.about-close-btn{
+    position: absolute; width: 70px; height: 70px; top:5%; left: 3%; cursor: pointer; z-index: 100;
 }
-.about-area .about-container .aboutImoge  .svg-area svg:nth-of-type(3){
-    width: 80px; fill:#00FF89; top:15%; right: 10%;animation: rotate 5s infinite linear;
+.about-close-btn button{
+    position: relative; width: inherit; height: inherit; border:none; outline: none; background: none;cursor: pointer;
 }
-.about-area .about-container .aboutImoge  .svg-area svg:last-of-type{
-    width: 50px; fill:#FFF500; bottom:10%; left: 25%;animation: rotate 5s infinite linear;
+.about-close-btn button span{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
 }
-.about-area .about-container .aboutContent{
-    width: 60%; height: 100%; 
-    display: flex; flex-direction: column; position: relative;
+.about-close-btn button > span:first-of-type{
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
-.about-area .about-container .aboutContent .aboutText{
-    padding:2% 5% 2% 5%;width: 90%; height: 40%;
+.about-title{
+        width: 100%; height: 20%; position: relative;
 }
-.about-area .about-container .aboutContent .aboutText div {
-    font-family: 'Montserrat', sans-serif; display: inline; margin-bottom:2%;
-    font-weight: 700;font-size: 2rem;  color:#FF5D2C; 
+.about-title h2{
+    position: absolute; top:50%; right: 3%; transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
 }
-.about-area .about-container .aboutContent .aboutText p {
-    font-family: 'Noto Sans KR', sans-serif; display: inline-block;margin-bottom:2%;
-    font-weight: 300;font-size: 1rem;  text-align: justify;
+.about-contents{
+    width: 90%; height: 80%; display: flex; margin-left:5% ;
+}
+.about-images{
+    width: 45%;height: 100%; position: relative;
+}
+.svg-area {
+    width: 100%; height: 100%; position: absolute}
+.svg-area svg{
+    top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;   width: 100%; 
+}
+.svg-area svg:first-of-type{
+    top:40%; left:40%; transform: translate(-50%, -50%); width: 450px;fill:white; 
+}
+.svg-area svg:nth-of-type(2){
+    width: 30px;  top:10%; left: 10%; transform: translate(-50%, -50%);fill:#00FF89; 
+}
+.svg-area svg:nth-of-type(3){
+    width: 50px; fill:#FFBA00; top:80%; right: 0%;transform: translate(0%, 0%);
+}
+.svg-area svg:last-of-type{
+    width: 40px; fill:#FFBA00; top:20%; left: 80%;transform: translate(0%, 0%);
+}
+.about-images img{
+    top:50%; left:50%; transform: translate(-50%, -70%); position: absolute; width: 300px;
+}
+.about-images img:nth-of-type(2){
+    top:20%; left:25%; transform: translate(-50%, -50%) rotate(-10deg); position: absolute; width: 200px;
+}
+.about-images img:nth-of-type(3){
+    top:60%; left:70%; transform: translate(-50%, -50%); position: absolute; width: 200px;
+}
+.about-texts{
+    width: 55%;height: 100%; position: relative; display: flex; flex-direction: column;
+}
+.about-name, .about-hahTags{
+    width: 100%; height: 25%; position: relative;
+}
+.about-name h3, .about-hahTags h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;
+}
+.about-name p, .about-hahTags p{
+    font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem;line-height: 1.5rem;
 }
 
-.about-area .about-container  .aboutContent  .aboutAnother{
-    width: 90%; height: 60%; 
-    bottom: 0;   padding: 5% 5% 5% 5%; display: flex;
+.about-utilitys{
+    width: 90%;height: 50%; position: relative;display: flex; 
+}
+.utility-list {
+    width: 60%;height: 100%;
+}
+.utility-list h3, .about-tmis h3{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;
+}
+.about-tmis{
+    width: 40%;height: 100%;
 }
 
-.about-area .about-container  .aboutContent  .aboutAnother .utility{
-   width: 50%;height: 100%;  border-right:solid 2px #FF5D2C; 
+/* article:last-of-type{
+    display: block; 
+} */
+.contact-container{
+    width: 100%; height:100%;   margin: 0; opacity: 0;transition: 0.3s ease-in-out;visibility:hidden;
+    display: flex; align-items: center; justify-content: center; justify-items: center;
 }
-.about-area .about-container  .aboutContent  .aboutAnother .utility .title{
-    font-family: 'Montserrat', sans-serif; display: inline; color:#FF5D2C; 
-    font-weight: 700;font-size: 2rem;  text-transform: uppercase;
+.contact-container.active{
+    opacity: 1;transition: 0.3s ease-in-out; visibility:visible;
 }
-.about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list{
-   width: 100%; height: 100%; padding-top:30px;
+.contact-area{
+    width: 0%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;  transition: 0.3s ease-in-out;  opacity: 0;
 }
-.about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul{
-    width: 100%; padding:0;
- }
- .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li{
-    width: 100%; height: 20%; font-family: 'Montserrat', sans-serif; font-weight: 300;font-size: 1rem; 
-    list-style: none;  display: flex; align-items: center; margin-bottom:5%;
- }
- .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > div:first-of-type{
-    width: 50px;height: 50px; background-color: tomato; border-radius: 20px; display: inline-block;
- }
- .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > div:nth-of-type(2){
-    display: inline-block; margin-left: 5%;
- }
- .about-area .about-container  .aboutContent  .aboutAnother .utility .utility-list ul li > p{
-    display: inline-block; margin: 0;
- }
+.contact-area.active{
+    width: 70%; height:50%; background-color: rgb(0, 0, 0);  position: relative; display: flex; flex-direction: column;  transition: 0.3s ease-in-out;  opacity: 1;
+}
+.contact-close-btn{
+    position: absolute; width: 70px; height: 70px; top:5%; right: 3%; cursor: pointer; z-index: 100;
+}
+.contact-close-btn button{
+    position: relative; width: inherit; height: inherit; border:none; outline: none; background: none;cursor: pointer;
+}
+.contact-close-btn button span{
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%) rotate(45deg); width: 80%; height: 1px; background: #FF5D2C;
+}
+.contact-close-btn button > span:first-of-type{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
 
- .about-area .about-container  .aboutContent  .aboutAnother .tmi{
-    width: 50%;height: 100%;   margin-left: 5%;
- }
- .about-area .about-container  .aboutContent  .aboutAnother .tmi .title{
-     font-family: 'Montserrat', sans-serif;  margin-bottom:2%;
-     font-weight: 700;font-size: 2rem;  text-transform: uppercase;
-     color:#FF5D2C; 
- }
 
+.contact-title{
+    width: 100%; height: 40%; position: relative;
+}
+.contact-title h2{
+position: absolute; top:50%; left: 3%; transform: translateY(-50%);
+font-family: 'Montserrat', sans-serif;  text-transform: uppercase;
+font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
+}
+.contact-content{
+    width: 100%; height: 60%; position: relative; 
+    
+}
+.contact-content ul{
+    width: 80%; position: absolute; top:30%; left:50%; transform: translate(-50%, -50%); margin: 0; padding: 0;
+    display: flex; justify-content: space-around; height: 30%;
+}
+.contact-content ul li{
+ list-style: none;  height: 100%; display: flex; flex-direction: column;
+}
+.contact-content ul li h4{
+    font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase; height: 50%;
+}
+.contact-content ul li p{
+    font-family: 'Montserrat', sans-serif;  font-weight: 300;font-size: 1.2rem; color: #FF5D2C; letter-spacing: 1px;
+}
+.contact-imoges{
+    position: absolute; bottom: 40%; left:-10%; width: 100%;
+}
+.contact-imoges-wrap {
+    position: relative;width: 100%;
+}
+.contact-imoges img{
+    width: 250px; z-index: 100; position: absolute;
+}
+.contact-imoges svg{
+    width: 50px; position: absolute;fill:#00FF89;  margin-top:0%; left: 2%; transform: rotate(-20deg);
+}
+
+footer{
+    width: 100%; height: 5%; position: absolute; bottom:0; 
+    /* border-top: solid 1px #FF5D2C; */
+}
+
+.footer-wrap{
+    position: relative; width: 100%; height: 100%;   border-top: solid 1px #FF5D2C; opacity: 1; transition: 0.5s ease-in-out;
+}
+.footer-wrap.active{
+    position: relative; width: 100%; height: 100%;   border-top: solid 1px #FF5D2C;opacity: 0;transition: 0.5s ease-in-out;
+}
+.footer-wrap p{
+    position: absolute;transform: translate(-50%,-50%); top:50%; left:50%; margin: 0;
+}
