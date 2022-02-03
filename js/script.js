@@ -20,9 +20,13 @@ const btt = document.getElementById('back-to-top');
 const pfListWrap = document.querySelector('.pf-list ul');
 let pfList = document.querySelectorAll('.pf-list > ul > li')
 const article = document.querySelectorAll('article');
+const aboutTitle = document.querySelector('.about-title');
 const aboutArea = document.querySelector('.about-area')
 const aboutContainer = document.querySelector('.about-container');
+const aboutContents = document.querySelector('.about-contents');
 const aboutCloseBtn = document.querySelector('.about-close-btn button');
+const contactTitle = document.querySelector('.contact-title');
+const contactContent = document.querySelector('.contact-content');
 const contactArea = document.querySelector('.contact-area');
 const contactContainer = document.querySelector('.contact-container');
 const contactCloseBtn = document.querySelector('.contact-close-btn button');
@@ -117,6 +121,10 @@ for(let i = 0; i < pfList.length; i++){
             setTimeout(()=>{
                 aboutArea.classList.add('active');
                 article[1].classList.remove('active');
+                aboutTitle.style.visibility ='visible';
+                aboutTitle.style.opacity ='1';
+                aboutContents.style.visibility ='visible';
+                aboutContents.style.opacity ='1';ㄴ
             },300)
             pfListWrap.classList.add('active');
            
@@ -127,6 +135,10 @@ for(let i = 0; i < pfList.length; i++){
             setTimeout(()=>{
                 contactArea.classList.add('active');
                 article[0].classList.remove('active');
+                contactTitle.style.visibility ='visible';
+                contactTitle.style.opacity ='1';
+                contactContent.style.visibility ='visible';
+                contactContent.style.opacity ='1';
             },300)
             pfListWrap.classList.add('active');
             
@@ -134,25 +146,37 @@ for(let i = 0; i < pfList.length; i++){
     })
     aboutCloseBtn.addEventListener('click',()=>{
         setTimeout(()=>{
+            aboutTitle.style.visibility ='hidden';
+            aboutTitle.style.opacity ='0';
+            aboutContents.style.visibility ='hidden';
+            aboutContents.style.opacity ='0';
+        },200)
+        setTimeout(()=>{
             aboutArea.classList.remove('active');
-        },400)
+        },200)
         setTimeout(()=>{
             aboutContainer.classList.remove('active');
             article[i].classList.remove('active');
             pfListWrap.classList.remove('active');
-        },1000)
+        },600)
        
        
     })
     contactCloseBtn.addEventListener('click',()=>{
         setTimeout(()=>{
+            contactTitle.style.visibility ='hidden';
+            contactTitle.style.opacity ='0';
+            contactContent.style.visibility ='hidden';
+            contactContent.style.opacity ='0';
+        },200)
+        setTimeout(()=>{
             contactArea.classList.remove('active');
-        },500)
+        },200)
         setTimeout(()=>{
             contactContainer.classList.remove('active');
             article[i].classList.remove('active');
             pfListWrap.classList.remove('active');
-        },1000)
+        },600)
       
     })
 }

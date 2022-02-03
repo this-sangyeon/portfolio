@@ -41,5 +41,5 @@ header.active{
 .pf-list ul li a{
     color:#FF5D2C;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;font-size:1.5rem; 
+    font-weight: 700;font-size:1.5rem; text-transform: uppercase;
 }
