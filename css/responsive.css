@@ -3,17 +3,40 @@
         width: 70%; 
     }
 }
-/* @media screen  and (max-width : 1300px){
+@media screen  and (max-width : 1400px){
     .work-sub-content{
         width: 65%; 
     }
-} */
+    .about-title h2{
+       font-size: 6rem; 
+    }
+}
 @media screen  and (max-width : 1200px){
     .work-title {
         width: 40%;right: 2%; transition: 0.3s ease-in-out;
     }
     .work-sub-content{
         width: 80%; 
+    }
+    .about-title h2{
+        font-size: 4.5rem; 
+    }
+    .about-name, .about-hahTags{
+       margin-bottom: 5%;
+    }
+     .about-name h3, .about-hahTags h3{
+        font-size: 1.7rem; margin-bottom: 5px;
+     }
+     .about-name p, .about-hahTags p{
+       font-size: 0.9rem;line-height: 1.3rem; margin: 0;
+    }
+}
+@media screen  and (max-width : 1100px){
+    .about-name h3, .about-hahTags h3{
+        font-size: 1.5rem;
+     }
+     .svg-area svg:first-of-type{
+        top:40%; left:40%; transform: translate(-50%, -50%); width: 400px;fill:white; 
     }
 }
 @media screen  and (max-width : 950px){
@@ -43,11 +66,30 @@
     .work-skills p, .work-link-wrap button span a{
         font-size:1.5rem;
     }
+    .about-title h2{
+        font-size: 4rem; 
+     }
   
 
 }
-   
+@media screen  and (max-width : 850px){
+    .about-title{
+        width: 100%; height: 15%; position: relative;
+}
+    .about-title h2{
+        font-size: 3rem; 
+     }
+     .about-name, .about-hahTags{
+        margin-bottom: 10%;
+     }
+     .about-contents{
+        width: 90%; height: 85%; display: flex; margin-left:5% ;
+    }
+}
 @media screen  and (max-width : 750px){
+    .logo > a > img{
+        width: 50px;
+    }
     .main-title h1{
         transition: 0.3s ease-in-out; font-size:5rem;
      }
@@ -56,6 +98,12 @@
      }
      .pf-list ul li a{font-size:1.2rem;transition: 0.5s ease-in-out;}
 
+     .work-title-container{
+        position: relative; width: 100%;height: 10%;
+    }
+    .work-arrow-btn button div{
+        width: 30px; height: 30px;
+    }
      .work-skills p, .work-link-wrap button span a{
         font-size:1rem;
     }
@@ -64,7 +112,29 @@
     }
 }
 
+@media screen  and (max-width : 650px){
+    .about-title h2{
+        font-size: 2.5rem; 
+     }
+     .about-contents{
+        width: 100%; height: 80%; display: flex;flex-direction: column; margin-left:0% ;
+    }
 
+    .about-texts{
+        width: 80%;height: 90%; position: relative; display: flex; flex-direction: column; left:50%; transform: translateX(-50%);
+    }
+    .about-name, .about-hahTags{
+        width: 100%;
+    }
+    .about-images{
+       display: none;
+    }
+   
+    .svg-area {
+        width: 100%; height: 100%; position:relative;
+    }
+  
+}
 @media screen  and (max-width : 550px){
     .main-title h1{
         transition: 0.3s ease-in-out; font-size:4rem;
@@ -75,7 +145,9 @@
     .work-title ul li .img-wrap.active {
        left:-70%; 
     }
-   
+    .about-title h2{
+        font-size: 2.2rem; 
+     }
 }
 @media screen  and (max-width : 470px){
     .main-title h1{
