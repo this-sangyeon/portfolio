@@ -164,32 +164,32 @@ section{
     position: relative; width: 100%;height: 2%; 
 }
 .work-sub-content{
-    width: 50%; height: 100%; position: absolute; display: flex;top:50%; left:50%; transform: translate(-50%, -50%);
+    width: 50%; height: 100%; position: absolute; display: flex;top:50%; left:50%; transform: translate(-50%, -50%);transition: 0.5s ease-in-out;
 }
 .work-skills{
-   width: 70%;height: 100%; position: relative; display: flex; align-items: center;
+   width: 70%;height: 100%; position: relative; display: flex; align-items: center;transition: 0.3 ease-in-out;
 }
 .work-skills span{
     border: solid 2px #FF5D2C; padding:5px 20px; margin-left: 5px; margin-right:5px;
-    border-radius: 50px;  
+    border-radius: 50px;  transition: 0.5s ease-in-out;
 }
 .work-skills p {
     margin: 0; font-family: 'Montserrat', sans-serif;text-align: center;
-    font-weight: 700;font-size:2rem; color:#FF5D2C;
+    font-weight: 700;font-size:2rem; color:#FF5D2C;transition: 0.5s ease-in-out;
 }
 .work-link-wrap{
-    width: 30%;height: 100%; position: relative;
+    width: 30%;height: 100%; position: relative; transition: 0.5s ease-in-out
 }
 .work-link-wrap button{
-    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none; cursor: pointer;
+    width: 100%;height: 100%; position: relative; border:none; outline: none; background: none; cursor: pointer; 
 }
 .work-link-wrap button > span{
     border: solid 2px #FF5D2C; padding:5px 30px; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
-    border-radius: 50px;  
+    border-radius: 50px;  transition: 0.5s ease-in-out;
 }
 .work-link-wrap button span a{
     margin: 0; font-family: 'Montserrat', sans-serif;text-align: center; color:#FF5D2C;
-    font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;
+    font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;transition: 0.5s ease-in-out;
 }
 
 
