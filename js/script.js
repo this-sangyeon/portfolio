@@ -124,7 +124,7 @@ for(let i = 0; i < pfList.length; i++){
                 aboutTitle.style.visibility ='visible';
                 aboutTitle.style.opacity ='1';
                 aboutContents.style.visibility ='visible';
-                aboutContents.style.opacity ='1';ㄴ
+                aboutContents.style.opacity ='1';
             },300)
             pfListWrap.classList.add('active');
            
@@ -156,7 +156,7 @@ for(let i = 0; i < pfList.length; i++){
         },200)
         setTimeout(()=>{
             aboutContainer.classList.remove('active');
-            article[i].classList.remove('active');
+            article[0].classList.remove('active');
             pfListWrap.classList.remove('active');
         },600)
        
@@ -174,7 +174,7 @@ for(let i = 0; i < pfList.length; i++){
         },200)
         setTimeout(()=>{
             contactContainer.classList.remove('active');
-            article[i].classList.remove('active');
+            article[1].classList.remove('active');
             pfListWrap.classList.remove('active');
         },600)
       

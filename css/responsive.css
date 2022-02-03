@@ -1,0 +1,69 @@
+@media screen  and (max-width : 1200px){
+    .work-title {
+        width: 40%;right: 2%; transition: 0.3s ease-in-out;
+    }
+}
+@media screen  and (max-width : 950px){
+    .main-title h1{
+       transition: 0.3s ease-in-out; font-size:7rem;
+    }
+    .work-title {
+        width: 50%; right: 5%;transition: 0.3s ease-in-out;
+    }
+    .pf-list ul{
+        width: 80%;margin:0 0 0 10%; top:10%; transition: 0.5s ease-in-out;
+    }
+    .pf-list ul li a{font-size:1.5rem;transition: 0.5s ease-in-out;}
+
+    .work-list-name h3{
+        font-size:4rem;
+    }
+
+}
+   
+@media screen  and (max-width : 750px){
+    .main-title h1{
+        transition: 0.3s ease-in-out; font-size:5rem;
+     }
+
+     .work-title ul li p {
+      font-size:1.5rem;transition: 0.5s ease-in-out
+     }
+     .pf-list ul li a{font-size:1.2rem;transition: 0.5s ease-in-out;}
+}
+@media screen  and (max-width : 550px){
+    .main-title h1{
+        transition: 0.3s ease-in-out; font-size:4rem;
+     }
+     .work-title ul li p {
+        left:0%;transition: 0.5s ease-in-out
+    }
+    .work-title ul li .img-wrap.active {
+       left:-70%; 
+    }
+}
+@media screen  and (max-width : 470px){
+    .main-title h1{
+        transition: 0.3s ease-in-out; font-size:3rem;
+     }
+     .work-title {
+        width: 40%; right: 5%;transition: 0.3s ease-in-out;
+    }
+     .work-list-wrap{
+       height: 50%;transition: 0.5s ease-in-out
+    }
+    .work-title ul li p {
+        font-size:1.2rem;transition: 0.5s ease-in-out
+    }
+    .work-title ul li .img-wrap {
+       display: none;
+    }
+    .pf-list{
+        height: 5%; 
+    }
+    .pf-list ul li a{font-size:1rem;transition: 0.5s ease-in-out;}
+
+}
+@media screen  and (max-width : 400px){
+    .pf-list ul li a{font-size:0.9rem;transition: 0.5s ease-in-out;}
+}

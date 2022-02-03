@@ -21,7 +21,7 @@ header.active{
 }
 
 .pf-list{
-    height: 10%;  position: absolute; bottom: 0; display: block;
+    height: 10%;  position: absolute; bottom: 0; display: block;transition: 0.5s ease-in-out;
 }
 .pf-list.active{
     display: none;
@@ -40,6 +40,6 @@ header.active{
 
 .pf-list ul li a{
     color:#FF5D2C;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;transition: 0.5s ease-in-out;
     font-weight: 700;font-size:1.5rem; text-transform: uppercase;
 }
