@@ -73,6 +73,32 @@
     .contact-imoges img{
         width: 250px; z-index: 100; position: absolute; right:-15%; top:0;
     }
+    .work-open-area{
+        position: relative;  width: 100%; height: 2500px;
+    }
+    .work-contents{
+        width: 100%;height: 100%;position: relative;
+    }
+    .work-wraps{
+        width: 100%; height: 25%; position: relative;  display: flex; flex-direction: column; margin-bottom: 1%;
+    }
+    .work-img-wrap{
+        width: 100%; position: relative;; height: 50%;
+    }
+    .work-wraps .work-texts{
+        width: 100%;position: relative; margin-left:0%;height: 50%;
+        display: flex; justify-content: center; flex-direction: column;
+    }
+    .work-wraps .work-texts p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;font-size: 1rem;  margin: 0;
+    }
+    .work-footer{
+        height: 20px;
+        position: absolute; bottom:5%;right:5%; transform: translateX(0%);
+        display: flex; width: 50%; 
+    }
+   
 }
 @media screen  and (max-width : 950px){
     .main-title h1{
@@ -147,6 +173,10 @@
     .about-images img:nth-of-type(3){
         top:70%; left:70%;  width: 200px; opacity: 0; visibility: hidden;
     }
+    .work-open-area{
+        position: relative;  width: 100%; height: 2000px;
+    }
+    
     
 }
 @media screen  and (max-width : 750px){
@@ -240,6 +270,9 @@
     .main-title h1{
         transition: 0.3s ease-in-out; font-size:4rem;
      }
+     .work-list-name h3{
+        font-size:2rem;
+    }
      .work-title ul li p {
         left:0%;transition: 0.5s ease-in-out
     }
