@@ -16,7 +16,6 @@
     .about-title h2{
        font-size: 6rem; 
     }
- 
     .contact-area.active{
         width: 90%; height:50%;
     }
@@ -45,9 +44,7 @@
     .about-name h3, .about-hahTags h3{
         font-size: 1.5rem;
      }
-     .svg-area svg:first-of-type{
-        top:40%; left:40%; transform: translate(-50%, -50%); width: 400px;fill:white; 
-    }
+    
     .contact-area{
        height:60%;
     }
@@ -107,6 +104,12 @@
     .about-title h2{
         font-size: 4rem; 
      }
+    .about-images img:nth-of-type(2){
+        top:5%; left:20%; width: 150px;
+    }
+    .about-images img:nth-of-type(3){
+        top:70%; left:70%;  width: 200px;
+    }
   
 
 }
@@ -122,6 +125,27 @@
      }
      .about-contents{
         width: 90%; height: 85%; display: flex; margin-left:5% ;
+    }
+    .svg-area svg:first-of-type{
+        top:30%; left:10%; width: 200px;
+    }
+    .svg-area svg:nth-of-type(2){
+        width: 30px;  top:5%; left: 30%; 
+    }
+    .svg-area svg:nth-of-type(3){
+        width: 50px; fill:#FFBA00; top:65%; left: 5%;
+    }
+    .svg-area svg:last-of-type{
+        width: 40px; fill:#FFBA00; top:25%; left: 85%;
+    }
+    .about-images img:first-of-type{
+        width: 250px; top:30%; left:50%; transform: translate(-50%, -70%); 
+    }
+    .about-images img:nth-of-type(2){
+        top:5%; left:20%; width: 150px; opacity: 0; visibility: hidden;
+    }
+    .about-images img:nth-of-type(3){
+        top:70%; left:70%;  width: 200px; opacity: 0; visibility: hidden;
     }
     
 }
@@ -152,6 +176,7 @@
     .contact-title h2{
        font-size: 6rem; 
     }
+    
 }
 
 @media screen  and (max-width : 650px){
@@ -201,10 +226,10 @@
         font-size: 5rem; 
      }
      .contact-area{
-        height:60%;
+        height:0%; width: 90%;
      }
      .contact-area.active{
-         height:60%; 
+         height:60%; width: 90%;
      }
      .contact-content ul li h4{
        font-size: 1.5rem; 

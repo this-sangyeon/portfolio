@@ -295,32 +295,32 @@ article.active{
 .about-images .about-img{
     width: 100%;height: 100%; position: relative;
 }
-.svg-area {
-    width: 100%; height: 100%; position: absolute
+.about-images .svg-area {
+    width: 100%; height: 100%; position: absolute;
 }
 .svg-area svg{
-    top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;   width: 100%; 
+    top:50%; left:50%; transform: translate(-50%, -50%); position: absolute;   width: 100%; transition: 0.5s ease-in-out;
 }
 .svg-area svg:first-of-type{
-    top:40%; left:40%; transform: translate(-50%, -50%); width: 450px;fill:white; 
+    top:30%; left:15%; transform: translate(-50%, -50%); width: 450px;fill:white; 
 }
 .svg-area svg:nth-of-type(2){
-    width: 30px;  top:10%; left: 10%; transform: translate(-50%, -50%);fill:#00FF89; 
+    width: 30px;  top:5%; left: 30%; transform: translate(-50%, -50%);fill:#00FF89; 
 }
 .svg-area svg:nth-of-type(3){
-    width: 50px; fill:#FFBA00; top:80%; right: 0%;transform: translate(0%, 0%);
+    width: 50px; fill:#FFBA00; top:65%; left: 5%;transform: translate(0%, 0%);
 }
 .svg-area svg:last-of-type{
-    width: 40px; fill:#FFBA00; top:20%; left: 80%;transform: translate(0%, 0%);
+    width: 40px; fill:#FFBA00; top:25%; left: 85%;transform: translate(0%, 0%);
 }
 .about-images img{
-    top:50%; left:50%; transform: translate(-50%, -70%); position: absolute; width: 300px;
+    top:50%; left:40%; transform: translate(-50%, -70%); position: absolute; width: 300px;transition: 0.5s ease-in-out;
 }
 .about-images img:nth-of-type(2){
-    top:20%; left:25%; transform: translate(-50%, -50%) rotate(-10deg); position: absolute; width: 200px;
+    top:5%; left:20%; transform: translate(-50%, -50%) rotate(-10deg); position: absolute; width: 200px; opacity: 1; visibility: visible;
 }
 .about-images img:nth-of-type(3){
-    top:60%; left:70%; transform: translate(-50%, -50%); position: absolute; width: 200px;
+    top:70%; left:70%;transform: translate(-50%, -50%); position: absolute; width: 200px; opacity: 1; visibility: visible;
 }
 .about-texts{
     width: 55%;height: 100%; position: relative; display: flex; flex-direction: column;
