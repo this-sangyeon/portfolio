@@ -2,12 +2,7 @@
     .work-sub-content{
         width: 70%; 
     }
-}
-@media screen and (min-width : 1101px) and (max-width : 1600px){
-    .contact-content ul{
-        width: 80%; position: absolute; top:30%; left:50%; transform: translate(-50%, -50%); margin: 0; padding: 0;
-        display: flex; justify-content: space-around; height: 30%;
-    }
+    
 }
 @media screen  and (max-width : 1400px){
     .work-sub-content{
@@ -40,6 +35,12 @@
        font-size: 0.9rem;line-height: 1.3rem; margin: 0;
     }
 }
+@media screen and (min-width : 1101px) and (max-width : 1600px){
+    .contact-content ul{
+        width: 80%; position: absolute; top:30%; left:50%; transform: translate(-50%, -50%); margin: 0; padding: 0;
+        display: flex; justify-content: space-around; height: 30%;
+    }
+}
 @media screen  and (max-width : 1100px){
     .about-name h3, .about-hahTags h3{
         font-size: 1.5rem;
@@ -59,7 +60,7 @@
     }
     .contact-content ul{
         width: 40%;top:50%; right:5%; margin: 0;
-        height: 100%;
+        height: 100%; flex-direction: column;
     }
     .contact-content ul li{
        height: 25%;
@@ -80,18 +81,22 @@
         width: 100%;height: 100%;position: relative;
     }
     .work-wraps{
-        width: 100%; height: 25%; position: relative;  display: flex; flex-direction: column; margin-bottom: 1%;
+        width: 100%; height: 25%; position: relative;  display: flex; flex-direction: column; margin-bottom: 2%;
+        box-sizing:content-box;
     }
     .work-img-wrap{
-        width: 100%; position: relative;; height: 50%;
+        width: 100%; position: relative; height: 60%;
     }
     .work-wraps .work-texts{
-        width: 100%;position: relative; margin-left:0%;height: 50%;
+        width: 100%;position: relative; margin-left:0%;height: 40%; 
         display: flex; justify-content: center; flex-direction: column;
+    }
+    .work-wraps .work-texts p:first-of-type {
+        margin-top:5%;
     }
     .work-wraps .work-texts p {
         font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 100;font-size: 1rem;  margin: 0;
+        font-weight: 100;font-size: 1rem;  margin: 0;height: 100%;
     }
     .work-footer{
         height: 20px;
@@ -195,7 +200,7 @@
         position: relative; width: 100%;height: 10%;
     }
     .work-arrow-btn button div{
-        width: 30px; height: 30px;
+        width: 20px; height: 20px;
     }
      .work-skills p, .work-link-wrap button span a{
         font-size:1rem;
@@ -264,6 +269,23 @@
      .contact-content ul li h4{
        font-size: 1.5rem; 
     }
+    .work-sub-content{
+        justify-content: center; align-items: center;
+        width: 100%; height: 100%; position: relative; display: flex;flex-direction: column; top:50%; left:0%; transform: translate(0%, -50%);transition: 0.5s ease-in-out;
+    }
+    .work-skills{
+        width: 60%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
+     }
+     .work-link-wrap{
+        width: 60%;height: 50%; position: relative; transition: 0.5s ease-in-out; margin-top: 50px;
+    }
+    .work-skills span{
+       width: 30%;
+    }
+    .work-skills span:last-of-type{
+        width: 40%;
+     }
+
   
 }
 @media screen  and (max-width : 550px){
@@ -293,6 +315,17 @@
      }
      .contact-imoges img{
         width: 200px; z-index: 100; position: absolute;transition: 0.5s ease-in-out;
+    }
+    .work-open-area{
+        position: relative;  width: 100%; height: 1700px;
+    }
+    .work-wraps .work-texts p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;font-size: 0.9rem;  margin: 0;
+    }
+    
+    .work-wraps:first-of-type {
+        margin-bottom: 15%;
     }
 }
 @media screen  and (max-width : 470px){
@@ -327,6 +360,9 @@
     .contact-content ul li p{
         font-size: 1rem;
     }
+    .work-skills{
+        width: 70%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
+     }
     .pf-list{
         height: 5%; 
     }

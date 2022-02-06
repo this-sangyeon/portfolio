@@ -43,7 +43,7 @@ let workInfoLink =[
     {
         link:'https://www.naver.com/',
         img: ['img/work/workimages/monster/monster1.png', 'img/work/workimages/monster/monster2.png', 'img/work/workimages/monster/monster3.png', 'img/work/workimages/monster/monster4.png'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
+        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
@@ -54,7 +54,7 @@ let workInfoLink =[
         img: ['img/work/workimages/johnwick/johnwick1.png', 'img/work/workimages/johnwick/johnwick2.png', 'img/work/workimages/johnwick/johnwick3.png', 'img/work/workimages/johnwick/johnwick4.png'],
         textOne:[
             '액션 스릴ㄹㄴㄴㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ작하였습니다.',
-            '순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', 
+            '순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. 여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', 
             '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'
         ],
         textTwo:'액션 스릴러 영화 “존 윅”을dfsdfsdfsddfsd 주제로 웹사이트를 제작하였습니다.',
@@ -65,7 +65,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimages/6sense/6sense1.png', 'img/work/workimages/6sense/6sense2.png', 'img/work/workimages/6sense/6sense3.png', 'img/work/workimages/6sense/6sense4.png'],
-        textOne:['Day6의 "The Book of us gravity"를 주제로 웹사이트를 제작하였습니다.','Day6만의 다양한 음악성과 감각을 잘 보여주는 color를 사용하였으며 <br>fix된 원페이지 안에서 메뉴와 버튼을 통해 다양한 인터렉션을 구성하였습니다.<br>뮤직 플레이어, 비디오 원형 슬라이드 등 처음 시도해본 만큼 <br>어려움을 많이 겪었지만 그 어려움을 통해 한껏 성장함이 엿보이는 웹사이트 입니다.', 'ㅇㅇ'],
+        textOne:['Day6의 "The Book of us gravity"를 주제로 웹사이트를 제작하였습니다.','Day6만의 다양한 음악성과 감각을 잘 보여주는 color를 사용하였으며 fix된 원페이지 안에서 메뉴와 버튼을 통해 다양한 인터렉션을 구성하였습니다. 뮤직 플레이어, 비디오 원형 슬라이드 등 처음 시도해본 만큼 어려움을 많이 겪었지만 그 어려움을 통해 한껏 성장함이 엿보이는 웹사이트 입니다.', 'ㅇㅇ'],
         textTwo:'액션 스릴러ddddfsdf 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 ㅎㄷㄹㅇㄴㅎㄱㄷㅎㅇㅇㅇㄹㄴㅇㄹ웹사이트를 제작하였습니다.',
@@ -74,7 +74,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimages/momentrip/momentrip1.png', 'img/work/workimages/momentrip/momentrip2.png', 'img/work/workimages/momentrip/momentrip3.png', 'img/work/workimages/momentrip/momentrip4.png'],
-        textOne:['순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다.','여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '졸업작품이며 팀작업으로 진행되었으며 기획 및 일러스트작업 및 웹 페이지를 제작하였습니다'],
+        textOne:['순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다.','여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '졸업작품이며 팀작업으로 진행되었으며 기획 및 일러스트작업 및 웹 페이지를 제작하였습니다'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
@@ -92,7 +92,7 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimages/whatyum/whatyum1.png', 'img/work/workimages/whatyum/whatyum2.png', 'img/work/workimages/whatyum/whatyum3.png', 'img/work/workimages/whatyum/whatyum4.png'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. <br><br>여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며,<br>그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
+        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. 여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
         textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
         textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
         textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
