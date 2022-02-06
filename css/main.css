@@ -409,7 +409,7 @@ font-weight: 700;font-size: 7rem; color: #FF5D2C; margin: 0;
     position: absolute; bottom: 40%; left:-10%; width: 100%;
 }
 .contact-imoges-wrap {
-    position: relative;width: 100%;
+    position: relative;width: 100%;transition: 0.5s ease-in-out;
 }
 .contact-imoges img{
     width: 250px; z-index: 100; position: absolute;transition: 0.5s ease-in-out;
