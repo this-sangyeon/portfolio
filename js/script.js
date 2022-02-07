@@ -33,6 +33,7 @@ const contactArea = document.querySelector('.contact-area');
 const contactContainer = document.querySelector('.contact-container');
 const contactCloseBtn = document.querySelector('.contact-close-btn button');
 
+const header = document.querySelector('header');
 const footer = document.querySelector('footer > .footer-wrap');
 
 workContentWrap = Array.prototype.slice.call(workContentWrap);
@@ -94,10 +95,10 @@ let workInfoLink =[
     {
         link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
         img: ['img/work/workimages/whatyum/whatyum1.png', 'img/work/workimages/whatyum/whatyum2.png', 'img/work/workimages/whatyum/whatyum3.png', 'img/work/workimages/whatyum/whatyum4.png'],
-        textOne:['액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.','순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다. 여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 그 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.'],
-        textTwo:'액션 스릴러fffsssffㅇㄹㅇㄴㄹㄴㄴㄹㅁㅇㅇㄹㅇㄴㄹㅍ웹사이트를 제작하였습니다.',
-        textThree:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
-        textFour:'액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
+        textOne:['1인 가구 및 자취생을 위한 랜덤 쿠킹박스 정기구독 서비스"왓냠"의 프로모션 웹사이트 입니다.  ','왓냠은 바쁘고 지친 일상 속 건강마저 제대로 챙기지 못하는 1인가구 및 자취생을 타겟으로 제작된 어플리케이션입니다.', '팀작업으로 진행되었습니다'],
+        textTwo:'왓냠의 서비스를 체험할 수 있는 페이지 입니다. 슬라이드 바를 통해 받아볼 박스의 갯수를 선택할 수 있습니다.',
+        textThree:'갯수를 선택한 뒤 원하는 메뉴를 선택하여 장바구니에 담을 수 있습니다. ',
+        textFour:'받아볼 날짜를 선택 시, 앞서 골랐던 쿠킹박스들이 정해진 날짜에 랜덤으로 배송되는 서비스 입니다.',
         title:'what yam!'
     }
 ]
@@ -210,6 +211,7 @@ for(let i = 0; i < workList.length; i++){
         wonkOpenContainer.classList.add('active');
         pfListWrap.classList.add('active');
         footer.classList.add('active');
+        header.classList.add('active');
         setTimeout(()=>{
             logo.classList.add('active');
         }, 300);
@@ -271,6 +273,7 @@ workCloseBtn.addEventListener('click',()=>{
     setTimeout(()=>{
         footer.classList.remove('active');
         logo.classList.remove('active');
+        header.classList.remove('active');
     },500);    
 })
 
