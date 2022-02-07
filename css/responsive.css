@@ -195,8 +195,12 @@
 }
 @media screen  and (max-width : 750px){
     .logo > a > img{
-        width: 50px;
+        width: 50px;  top:40%; transform: translate(-70%,-50%);
     }
+    .logo > a {
+      top:40%;
+    }
+    
     .main-title h1{
         transition: 0.3s ease-in-out; font-size:5rem;
      }
@@ -360,7 +364,9 @@
     .work-wraps:first-of-type {
         margin-bottom: 15%;
     }
-
+    .work-close-btn{
+        width: 50px; height: 50px; position:fixed; top:1%; right:2%; z-index: 100;transform: translateY( 0%)
+    }
 }
 @media screen  and (max-width : 470px){
     .main-title h1{
@@ -384,7 +390,6 @@
     .about-name h3, .about-hahTags h3, .utility-list h3, .about-tmis h3{
         font-size: 1.2rem;
      }
-
      .contact-title h2{
         font-size: 3rem; 
      }
@@ -397,6 +402,16 @@
     .work-skills{
         width: 70%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
      }
+
+     .about-close-btn{
+        position: absolute; width: 30px; height: 30px; top:5px; left: 90%; cursor: pointer; z-index: 100;
+    }
+    .about-close-btn button{
+        position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer; border-radius: 50%;
+    }
+    .about-close-btn button span{
+        background: black;
+    }
     .pf-list{
         height: 5%; 
     }
@@ -405,4 +420,16 @@
 }
 @media screen  and (max-width : 400px){
     .pf-list ul li a{font-size:0.9rem;transition: 0.5s ease-in-out;}
+}
+
+@media screen  and (max-height :667px){
+    /* .about-container {
+       height: 1100px; 
+    } */
+    .about-area.active{
+        overflow-y:auto;
+    }
+    .about-contents{
+        width: 90%; height: 90%; display: flex; margin-left:5% ; overflow-y:auto;
+    }
 }
