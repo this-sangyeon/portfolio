@@ -224,7 +224,9 @@
     .contact-title h2{
        font-size: 6rem; 
     }
-    
+    .work-wraps {
+        margin-bottom: 10%;
+    }
 }
 
 @media screen  and (max-width : 650px){
@@ -264,7 +266,7 @@
         width: 100%; display: flex; height: 20%; margin-top: 5px; justify-content: space-between;
     }
     .about-tmis{
-        width: 100%;height: 40%;
+        display: none;
     }
     .utility-list  ul li h4, .utility-list  ul li span p, .utility-list  ul li p{
         margin:0;
@@ -310,7 +312,7 @@
         width: 60%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
      }
      .work-link-wrap{
-        width: 60%;height: 50%; position: relative; transition: 0.5s ease-in-out; margin-top: 50px;
+        width: 60%;height: 50%; position: relative; transition: 0.5s ease-in-out; margin-top: 70px;
     }
     .work-skills span{
        width: 30%;
@@ -318,10 +320,21 @@
     .work-skills span:last-of-type{
         width: 40%;
      }
-
+     .work-link-wrap button span{
+         background: white;
+     }
+     .work-link-wrap button span a{
+       font-size:1.7rem;
+    }
   
 }
 @media screen  and (max-width : 550px){
+    .logo > a > img{
+        width: 40px;  top:40%; transform: translate(-100%,-50%);
+    }
+    .logo > a {
+      top:30%;
+    }
     .main-title h1{
         transition: 0.3s ease-in-out; font-size:4rem;
      }
@@ -334,14 +347,12 @@
     .work-title ul li .img-wrap.active {
        left:-70%; 
     }
-    .about-title h2{
-        font-size: 2.2rem; 
+  
+     .about-title h2{
+        font-size: 2.2rem;
      }
      .utility-list{
          height: 100%;
-     }
-     .about-tmis{
-         display: none;
      }
      .contact-title h2{
         font-size: 4rem; 
@@ -365,7 +376,14 @@
         margin-bottom: 15%;
     }
     .work-close-btn{
-        width: 50px; height: 50px; position:fixed; top:1%; right:2%; z-index: 100;transform: translateY( 0%)
+        width: 35px; height: 35px; position:fixed; top:0%; right:0%; z-index: 100;transform: translateY( 0%)
+    }
+    .work-close-btn > button{
+        position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer; 
+    }
+
+    .work-close-btn button span{
+        background: black;
     }
 }
 @media screen  and (max-width : 470px){
@@ -385,7 +403,7 @@
        display: none;
     }
     .about-title h2{
-        font-size: 2rem; 
+        font-size: 2rem; left: 5%; transform: translateY(-50%);
      }
     .about-name h3, .about-hahTags h3, .utility-list h3, .about-tmis h3{
         font-size: 1.2rem;
@@ -404,10 +422,10 @@
      }
 
      .about-close-btn{
-        position: absolute; width: 30px; height: 30px; top:5px; left: 90%; cursor: pointer; z-index: 100;
+        position: absolute; width: 30px; height: 30px; top:3px; left: 90%; cursor: pointer; z-index: 100;
     }
     .about-close-btn button{
-        position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer; border-radius: 50%;
+        position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer;
     }
     .about-close-btn button span{
         background: black;
@@ -422,14 +440,12 @@
     .pf-list ul li a{font-size:0.9rem;transition: 0.5s ease-in-out;}
 }
 
-@media screen  and (max-height :667px){
-    /* .about-container {
-       height: 1100px; 
-    } */
+@media screen  and (max-height :800px){
+   
     .about-area.active{
         overflow-y:auto;
     }
     .about-contents{
-        width: 90%; height: 90%; display: flex; margin-left:5% ; overflow-y:auto;
+        width: 100%; height: 90%; display: flex; margin-left:0% ; overflow-y:auto;
     }
 }

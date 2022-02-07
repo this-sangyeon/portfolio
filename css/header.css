@@ -4,14 +4,17 @@
 header{
     margin:0;
     background-color:none;
-    position: fixed;z-index: 9999;left: 0;top:0; height: 95%;
+    position: fixed;z-index: 6000;left: 0;top:0; height: 95%;
     display: flex; flex-direction: column; justify-content: space-between;
 }
 header.active{
  display: none;
 }
 .logo {
-    width: 100px; height: 100px; position: relative;
+    width: 100px; height: 100px; position: relative;opacity: 1; visibility: visible;
+}
+.logo.active{
+    opacity: 0; visibility:hidden; top:20%; position: relative;
 }
 .logo > a {
     position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);

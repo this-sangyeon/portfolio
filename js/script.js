@@ -1,3 +1,5 @@
+const logo = document.querySelector('.logo');
+
 const bgWorkImages = document.querySelectorAll('.bg-workImg');
 let workList = document.querySelectorAll('.work-list .work-title ul li');
 const workListImages = document.querySelectorAll('.img-wrap');
@@ -127,6 +129,7 @@ for(let i = 0; i < pfList.length; i++){
                 aboutContents.style.opacity ='1';
             },300)
             pfListWrap.classList.add('active');
+            logo.classList.add('active');
            
         }
         if(articleIndex === 1){
@@ -141,6 +144,7 @@ for(let i = 0; i < pfList.length; i++){
                 contactContent.style.opacity ='1';
             },300)
             pfListWrap.classList.add('active');
+            logo.classList.add('active');
             
         }
     })
@@ -158,6 +162,7 @@ for(let i = 0; i < pfList.length; i++){
             aboutContainer.classList.remove('active');
             article[0].classList.remove('active');
             pfListWrap.classList.remove('active');
+            logo.classList.remove('active');
         },600)
        
        
@@ -176,6 +181,7 @@ for(let i = 0; i < pfList.length; i++){
             contactContainer.classList.remove('active');
             article[1].classList.remove('active');
             pfListWrap.classList.remove('active');
+            logo.classList.remove('active');
         },600)
       
     })
@@ -204,6 +210,10 @@ for(let i = 0; i < workList.length; i++){
         wonkOpenContainer.classList.add('active');
         pfListWrap.classList.add('active');
         footer.classList.add('active');
+        setTimeout(()=>{
+            logo.classList.add('active');
+        }, 300);
+      
 
         for(let i = 0; i <  workContentWrap.length; i++ ){
             workContentWrap[i].setAttribute('src',workInfoLink[workIndex].img[i]);
@@ -257,8 +267,10 @@ workNextBtn.addEventListener('click',()=>{
 workCloseBtn.addEventListener('click',()=>{
     wonkOpenContainer.classList.remove('active');
     pfListWrap.classList.remove('active');
+    
     setTimeout(()=>{
         footer.classList.remove('active');
+        logo.classList.remove('active');
     },500);    
 })
 
