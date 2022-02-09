@@ -44,7 +44,7 @@ workList = Array.prototype.slice.call(workList);
 
 let workInfoLink =[
     {
-        link:'https://www.naver.com/',
+        link:'https://this-sangyeon.github.io/monsterDrink/',
         img: ['img/work/workimages/monster/monster1.png', 'img/work/workimages/monster/monster2.png', 'img/work/workimages/monster/monster3.png', 'img/work/workimages/monster/monster4.png'],
         textOne:['에너지 음료 “monster energy”  를 주제로 웹사이트를 제작하였습니다.','monster energy의 음료 제품을 구매할 수 있을 뿐만 아니라  후원하고 있는 뮤지션과 게이머 등의 정보도 살펴볼 수 있습니다. ', '블랙과 대조되는 네온 그린을 메인컬러로 사용하여 몬스터 에너지 특유의 강렬함이 돋보일 수 있도록 노력하였습니다.'],
         textTwo:'제품상세 페이지 입니다. 우측 리스트를 통해 원하는 제품을 선택하면 설명과 영양성분 등을 확인할 수 있으며 갯수 선택 후 제품 구매 버튼을 통해 가격값과 함께 장바구니에 담기도록 작업하였습니다.',
@@ -53,7 +53,7 @@ let workInfoLink =[
         title:'MONSTER ENERGY'
     },
     {
-        link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
+        link:'https://this-sangyeon.github.io/johnwick/',
         img: ['img/work/workimages/johnwick/johnwick1.png', 'img/work/workimages/johnwick/johnwick2.png', 'img/work/workimages/johnwick/johnwick3.png', 'img/work/workimages/johnwick/johnwick4.png'],
         textOne:[
             '액션 스릴러 영화 “존 윅”을 주제로 웹사이트를 제작하였습니다.',
@@ -66,7 +66,7 @@ let workInfoLink =[
         title:'JOHN WICK'
     },
     {
-        link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
+        link:'https://this-sangyeon.github.io/sixthSense/',
         img: ['img/work/workimages/6sense/6sense1.png', 'img/work/workimages/6sense/6sense2.png', 'img/work/workimages/6sense/6sense3.png', 'img/work/workimages/6sense/6sense4.png'],
         textOne:['Day6의 "The Book of us gravity"를 주제로 웹사이트를 제작하였습니다.','Day6의 "The Book of us gravity"를 주제로 웹사이트를 제작하였습니다. Day6만의 다양한 음악성과 감각을 잘 보여주는 color를 사용하였으며 fix된 원페이지 안에서 메뉴와 버튼을 통해 페이지가 이동합니다.', '뮤직 플레이어, 비디오 원형 슬라이드 등 처음 시도해본 만큼 어려움을 많이 겪었지만 그 어려움을 통해 한껏 성장함이 엿보이는 웹사이트 입니다.'],
         textTwo:'멤버 페이지입니다. 이미지에 마우스 커서를 호버 시 또 다른 이미지와 함께 각 멤버가 맡고 있는 악기의 사운드가 플레이 됩니다. ',
@@ -75,7 +75,7 @@ let workInfoLink =[
         title:'sixth sense'
     },
     {
-        link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
+        link:'https://this-sangyeon.github.io/momentrip/',
         img: ['img/work/workimages/momentrip/momentrip1.png', 'img/work/workimages/momentrip/momentrip2.png', 'img/work/workimages/momentrip/momentrip3.png', 'img/work/workimages/momentrip/momentrip4.png'],
         textOne:['순간을 기록하는 여행 기록 어플리케이션  "Momentrip" 웹사이트를 제작하였습니다.','여행 날짜를 선택하여 그 날짜를 기반으로 랜덤한 질문을 받을 수 있으며, 질문에 대한 답변을 기록하고, 포토북, 엽서 등의 아날로그 기록물로 받아볼 수 있는 서비스 입니다.', '졸업작품 및 팀작업으로 진행되었으며 기획 및 일러스트작업 및 웹 페이지를 제작하였습니다'],
         textTwo:'스크롤 시 하단의 자전거를 탄 캐릭터가 움직이며 서비스를 소개하는 가로 스크롤 패럴랙스 사이트 입니다. 해당 스크롤 값에 따라 이미지가 액팅됩니다. 우측 상단의 아이콘을 통해 bgm을 on/off 할 수 있으며 모먼트립의 아이덴티티를 확인할 수 있습니다.',
@@ -84,7 +84,7 @@ let workInfoLink =[
         title:'momentrip'
     },
     {
-        link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
+        link:'https://this-sangyeon.github.io/aboutSpain/',
         img: ['img/work/workimages/aboutSpain/aboutSpain1.png', 'img/work/workimages/aboutSpain/aboutSpain2.png', 'img/work/workimages/aboutSpain/aboutSpain3.png', 'img/work/workimages/aboutSpain/aboutSpain4.png'],
         textOne:[' 가장 가보고 싶어했던 나라 "SPAIN"을 주제로 웹사이트를 제작하였습니다. 좌우버튼 클릭 시 스페인의 풍경 이미지가 슬라이드 됩니다.','스페인의 관광지와 3대축제 및 예술가 등을 알아보는 페이지로 구성되어있습니다. ', ''],
         textTwo:'art 페이지 입니다. 예술의 나라답게 스페인은 건축, 회화 부분에서 많은 아티스트를 배출하였습니다. 각 이미지에 커서를 호버하면 제목과 아티스트의 이름이 나오며 클릭 시 큰 화면으로 작품을 감상할 수 있습니다. ',
@@ -93,7 +93,7 @@ let workInfoLink =[
         title:'about spain'
     },
     {
-        link:'https://www.youtube.com/watch?v=WB8ALajdYQQ&t=3173s',
+        link:'https://this-sangyeon.github.io/whatyam/',
         img: ['img/work/workimages/whatyum/whatyum1.png', 'img/work/workimages/whatyum/whatyum2.png', 'img/work/workimages/whatyum/whatyum3.png', 'img/work/workimages/whatyum/whatyum4.png'],
         textOne:['1인 가구 및 자취생을 위한 랜덤 쿠킹박스 정기구독 서비스"왓냠"의 프로모션 웹사이트 입니다.  ','왓냠은 바쁘고 지친 일상 속 건강마저 제대로 챙기지 못하는 1인가구 및 자취생을 타겟으로 제작된 어플리케이션입니다.', '팀작업으로 진행되었습니다'],
         textTwo:'왓냠의 서비스를 체험할 수 있는 페이지 입니다. 슬라이드 바를 통해 받아볼 박스의 갯수를 선택할 수 있습니다.',
