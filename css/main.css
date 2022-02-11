@@ -339,7 +339,7 @@ article.active{
     width: 55%;height: 100%; position: relative; display: flex; flex-direction: column;
 }
 .about-name, .about-hahTags{
-    width: 100%; height: 25%; position: relative;
+    width: 100%; height: 25%; position: relative; margin: 0;
 }
 .about-name h3, .about-hahTags h3{
     font-family: 'Montserrat', sans-serif; margin: 0; font-weight: 700;font-size: 2rem; color: #FF5D2C; text-transform: uppercase;transition: 0.5s ease-in-out;
@@ -451,5 +451,6 @@ footer{
     position: relative; width: 100%; height: 100%;   border-top: solid 1px #FF5D2C;opacity: 0;transition: 0.5s ease-in-out;
 }
 .footer-wrap p{
-    position: absolute;transform: translate(-50%,-50%); top:50%; left:50%; margin: 0;
+    font-family: 'Montserrat', sans-serif; font-weight: 200;font-size: 1rem; color:#ffffff;
+    position: absolute;transform: translate(-50%,-50%); top:50%; left:50%; margin: 0; text-align: center; transition: 0.3s ease-in-out;
 }

@@ -1,312 +1,134 @@
 @media screen  and (max-width : 1600px){
-    .work-sub-content{
-        width: 70%; 
-    }
-    
+    .work-sub-content{width: 70%; }
 }
 @media screen  and (max-width : 1400px){
-    .work-sub-content{
-        width: 65%; 
-    }
-    .about-title h2{
-       font-size: 6rem; 
-    }
-    .contact-area.active{
-        width: 90%; height:50%;
-    }
-    .main-title p{  width: 40%;  }
+    .work-sub-content{width: 65%; }
+    .about-title h2{font-size: 6rem; }
+    .contact-area.active{width: 90%; height:50%;}
+    .main-title p{width: 40%;}
 }
 @media screen  and (max-width : 1200px){
-    .work-title {
-        width: 40%;right: 2%; transition: 0.3s ease-in-out;
-    }
-    .work-sub-content{
-        width: 80%; 
-    }
-    .about-title h2{
-        font-size: 4.5rem; 
-    }
-    .about-name, .about-hahTags{
-       margin-bottom: 5%;
-    }
-     .about-name h3, .about-hahTags h3, .utility-list h3, .about-tmis h3{
-        font-size: 1.7rem; margin-bottom: 5px;
-     }
-     .about-name p, .about-hahTags p{
-       font-size: 0.9rem;line-height: 1.3rem; margin: 0;
-    }
+    .work-title {width: 40%;right: 2%; transition: 0.3s ease-in-out;}
+    .work-sub-content{width: 80%; }
+    .about-title h2{font-size: 4.5rem; }
+    .about-name h3, .about-hahTags h3, .utility-list h3, .about-tmis h3{font-size: 1.7rem; margin-bottom: 5px;}
+     .about-name p, .about-hahTags p ,.utility-list ul li p{font-size: 0.9rem;line-height: 1.3rem; margin: 0;}
 }
 @media screen and (min-width : 1101px) and (max-width : 1600px){
     .contact-content ul{
         width: 80%; position: absolute; top:30%; left:50%; transform: translate(-50%, -50%); margin: 0; padding: 0;
         display: flex; justify-content: space-around; height: 30%;
     }
-    .contact-imoges svg{
-        width: 40px; position: absolute;fill:#00FF89;  margin-top:0%; left: 5%; transform: rotate(-20deg);
-    }
+    .contact-imoges svg{width: 40px; position: absolute;fill:#00FF89;  margin-top:0%; left: 5%; transform: rotate(-20deg);}
 }
 @media screen  and (max-width : 1100px){
-    .about-name h3, .about-hahTags h3{
-        font-size: 1.5rem;
-     }
-    
-    .contact-area{
-       height:60%;
-    }
-    .contact-area.active{
-        height:60%; 
-    }
-    .contact-title{
-        width: 100%; height: 30%; position: relative;
-    }
-    .contact-content{
-        width: 100%; height: 70%; position: relative;
-    }
+    .about-name h3, .about-hahTags h3{font-size: 1.5rem;}
+    .svg-area svg:first-of-type{top:30%; left:10%; width: 350px;}
+    .contact-area{height:60%;}
+    .contact-area.active{height:60%;}
+    .contact-title{width: 100%; height: 30%; position: relative;}
+    .contact-content{width: 100%; height: 70%; position: relative;}
     .contact-content ul{
-        width: 40%;top:50%; left:70%; margin: 0;
-        height: 100%; flex-direction: column;
+        width: 40%;top:50%; left:70%; margin: 0;height: 100%; flex-direction: column;
     }
-    .contact-content ul li{
-       height: 25%;
-    }
-    .contact-content ul li p{
-      margin: 0;
-    }
-    .contact-imoges{
-        position: absolute; top: 30%; width: 100%; 
-    }
-    .contact-imoges img{
-        width: 300px; z-index: 100; position: absolute; left:35%; top:0; transform: translateX(-50%);
-    }
-    /* .contact-imoges img{
-        width: 250px; z-index: 100; position: absolute; right:-15%; top:0;
-    } */
-    .work-open-area{
-        position: relative;  width: 100%; height: 2500px;
-    }
-    .work-contents{
-        width: 100%;height: 100%;position: relative;
-    }
+    .contact-content ul li{height: 25%;}
+    .contact-content ul li p{margin: 0;}
+    .contact-imoges{position: absolute; top: 30%; width: 100%;}
+    .contact-imoges img{width: 300px; z-index: 100; position: absolute; left:35%; top:0; transform: translateX(-50%);}
+    .work-open-area{position: relative;  width: 100%; height: 2500px;}
+    .work-contents{width: 100%;height: 100%;position: relative;}
     .work-wraps{
-        width: 100%; height: 25%; position: relative;  display: flex; flex-direction: column; margin-bottom: 2%;
-        box-sizing:content-box;
+        width: 100%; height: 25%; position: relative;  display: flex; flex-direction: column; margin-bottom: 2%;box-sizing:content-box;
     }
-    .work-img-wrap{
-        width: 100%; position: relative; height: 60%;
-    }
+    .work-img-wrap{width: 100%; position: relative; height: 60%;}
     .work-wraps .work-texts{
         width: 100%;position: relative; margin-left:0%;height: 40%; 
         display: flex; justify-content: center; flex-direction: column;
     }
-    .work-wraps .work-texts p:first-of-type {
-        margin-top:5%;
-    }
+    .work-wraps .work-texts p:first-of-type {margin-top:5%;}
     .work-wraps .work-texts p {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 100;font-size: 1rem;  margin: 0;height: 100%;
+        font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 1rem;  margin: 0;height: 100%;
     }
     .work-footer{
-        height: 20px;
-        position: absolute; bottom:5%;right:5%; transform: translateX(0%);
-        display: flex; width: 50%; 
+        height: 20px;position: absolute; bottom:5%;right:5%; transform: translateX(0%);display: flex; width: 50%; 
     }
     .contact-imoges svg{
         width: 40px; position: absolute;fill:#00FF89;  margin-top:0%; left: 90%; transform: rotate(-20deg);
     }
-   
 }
 @media screen  and (max-width : 950px){
-    .main-title h1{
-       transition: 0.3s ease-in-out; font-size:7rem;
-    }
-    .work-title {
-        width: 50%; right: 5%;transition: 0.3s ease-in-out;
-    }
-    .pf-list ul{
-        width: 80%;margin:0 0 0 10%; top:10%; transition: 0.5s ease-in-out;
-    }
+    .main-title h1{transition: 0.3s ease-in-out; font-size:7rem;}
+    .work-title {width: 50%; right: 5%;transition: 0.3s ease-in-out;}
+    .pf-list ul{width: 80%;margin:0 0 0 10%; top:10%; transition: 0.5s ease-in-out;}
     .pf-list ul li a{font-size:1.5rem;transition: 0.5s ease-in-out;}
-
-    .work-list-name h3{
-        font-size:4rem;
-    }
-    .work-sub-content{
-        width: 70%; 
-    }
-    .work-skills{
-        width: 100%;
-     }
-    .work-skills span, .work-link-wrap button > span{
-        padding:2px 10px; 
-    }
-    .work-skills p, .work-link-wrap button span a{
-        font-size:1.5rem;
-    }
-    .about-title h2{
-        font-size: 4rem; 
-     }
-    .about-images img:nth-of-type(2){
-        top:5%; left:20%; width: 150px;
-    }
-    .about-images img:nth-of-type(3){
-        top:70%; left:70%;  width: 200px;
-    }
-  
-
+    .work-list-name h3{font-size:4rem;}
+    .work-sub-content{width: 70%;}
+    .work-skills{width: 100%;}
+    .work-skills span, .work-link-wrap button > span{padding:2px 10px;}
+    .work-skills p, .work-link-wrap button span a{font-size:1.5rem;}
+    .about-title h2{font-size: 4rem;}
+    .about-images img:nth-of-type(2){top:5%; left:20%; width: 150px;}
+    .about-images img:nth-of-type(3){top:70%; left:70%;  width: 200px;}
 }
 @media screen  and (max-width : 850px){
-    .main-title p{  width: 80%;  }
-    .about-title{
-        width: 100%; height: 15%; position: relative;
-}
-    .about-title h2{
-        font-size: 3rem; 
-     }
-     .about-name, .about-hahTags{
-        margin-bottom: 10%;
-     }
-     .about-contents{
-        width: 90%; height: 85%; display: flex; margin-left:5% ;
-    }
-    .svg-area svg:first-of-type{
-        top:30%; left:10%; width: 200px;
-    }
-    .svg-area svg:nth-of-type(2){
-        width: 30px;  top:5%; left: 30%; 
-    }
-    .svg-area svg:nth-of-type(3){
-        width: 50px; fill:#FFBA00; top:65%; left: 5%;
-    }
-    .svg-area svg:last-of-type{
-        width: 40px; fill:#FFBA00; top:25%; left: 85%;
-    }
-    .about-images img:first-of-type{
-        width: 250px; top:30%; left:50%; transform: translate(-50%, -70%); 
-    }
-    .about-images img:nth-of-type(2){
-        top:5%; left:20%; width: 150px; opacity: 0; visibility: hidden;
-    }
-    .about-images img:nth-of-type(3){
-        top:70%; left:70%;  width: 200px; opacity: 0; visibility: hidden;
-    }
-    .work-open-area{
-        position: relative;  width: 100%; height: 2000px;
-    }
-    .work-title ul li .img-wrap {
-        display: none;
-     }
+    .main-title p{width: 80%;}
+    .about-title{width: 100%; height: 15%; position: relative;}
+    .about-title h2{font-size: 3rem;}
+    .about-name, .about-hahTags{margin-bottom: 10%;}
+    .about-name h3, .about-hahTags h3{font-size: 1.2rem;}
+    .about-contents{width: 90%; height: 85%; display: flex; margin-left:5%;}
+    .svg-area svg:first-of-type{top:30%; left:10%; width: 170px;}
+    .svg-area svg:nth-of-type(2){width: 30px;  top:5%; left: 30%;}
+    .svg-area svg:nth-of-type(3){display: none;}
+    .svg-area svg:last-of-type{width: 40px; fill:#FFBA00; top:25%; left: 85%;}
+    .about-images img:first-of-type{width: 250px; top:30%; left:50%; transform: translate(-50%, -70%);}
+    .about-images img:nth-of-type(2){top:5%; left:20%; width: 150px; opacity: 0; visibility: hidden;}
+    .about-images img:nth-of-type(3){top:70%; left:70%;  width: 200px; opacity: 0; visibility: hidden;}
+    .about-utilitys{width: 180%;height: 50%; position: relative; left:-80%; top:-5%;}
+    .utility-list  ul li{width: 100%; display: flex; flex-direction: column; height: 30%; margin-top: 5px; }
+    .utility-list  ul li h4{width: 100%;}
+    .utility-list ul li p{width: 100%; margin-top:-5px; margin-bottom: 0px;}
+    .work-open-area{position: relative;  width: 100%; height: 2000px;}
+    .work-title ul li .img-wrap {display: none;}
 }
 @media screen  and (max-width : 750px){
-    .logo > a > img{
-        width: 50px;  top:40%; transform: translate(-70%,-50%);
-    }
-    .logo > a {
-      top:40%;
-    }
-    
-    .main-title h1{
-        transition: 0.3s ease-in-out; font-size:5rem;
-     }
-     .work-title ul li p {
-      font-size:1.5rem;transition: 0.5s ease-in-out
-     }
-     .pf-list ul li a{font-size:1.2rem;transition: 0.5s ease-in-out;}
-
-     .work-title-container{
-        position: relative; width: 100%;height: 10%;
-    }
-    .work-arrow-btn button div{
-        width: 20px; height: 20px;
-    }
-     .work-skills p, .work-link-wrap button span a{
-        font-size:1rem;
-    }
-    .work-list-name h3{
-        font-size:3rem;
-    }
-    .contact-title h2{
-       font-size: 6rem; 
-    }
-    .work-wraps {
-        margin-bottom: 10%;
-    }
+    .logo > a > img{width: 50px;  top:40%; transform: translate(-70%,-50%);}
+    .logo > a {top:40%;} 
+    .main-title h1{transition: 0.3s ease-in-out; font-size:5rem;}
+    .work-title ul li p {font-size:1.5rem;transition: 0.5s ease-in-out}
+    .pf-list ul li a{font-size:1.2rem;transition: 0.5s ease-in-out;}
+    .work-title-container{position: relative; width: 100%;height: 10%;}
+    .work-arrow-btn button div{width: 20px; height: 20px;}
+    .work-skills p, .work-link-wrap button span a{font-size:1rem;}
+    .work-list-name h3{font-size:3rem;}
+    .contact-title h2{font-size: 6rem;}
+    .work-wraps {margin-bottom: 10%;}
 }
-
 @media screen  and (max-width : 650px){
-    .about-title h2{
-        font-size: 2.5rem; 
-     }
-     .about-title{
-         height: 20%;
-     }
-     .about-contents{
-        width: 100%; height: 100%; display: flex;flex-direction: column; margin-left:0% ;
-    }
-
-    .about-texts{
-        width: 80%;height: 100%; position: relative; display: flex; flex-direction: column; left:50%; transform: translateX(-50%);
-    }
-    .about-name{
-        width: 100%; height: 30%; margin: 0;
-    }
-    .about-hahTags{
-        width: 100%; height: 30%; margin: 0;
-    }
-    .about-images{
-       display: none;
-    }
-   
-    .svg-area {
-        width: 100%; height: 100%; position:relative;
-    }
-    .about-utilitys{
-        width: 100%; flex-direction: column; height: 50%;
-    }
-    .utility-list {
-        width: 100%;height: 100%;
-    }
-    .utility-list  ul{
-        width: 100%; display: flex; flex-direction: column; height: 100%; margin: 0; padding: 0;
-    }
-    .utility-list  ul li{
-        width: 100%; display: flex; height: auto; margin-top: 5px; justify-content: space-between;
-    }
-    .utility-list  ul li h4, .utility-list  ul li span p, .utility-list  ul li p{
-        margin:0;
-    }
-
-    .contact-title h2{
-        font-size: 5rem; 
-     }
-     .contact-area{
-        height:0%; width: 90%;
-     }
-     .contact-area.active{
-         height:60%; width: 90%;
-     }
-     .contact-content ul{
-        width: 60%;top:50%; left:40%; margin: 0;
-        height: 100%; flex-direction: column;
-    }
-    .contact-content ul li{
-       height: 25%;
-    }
-    .contact-content ul li p{
-      margin: 0;
-    }
-    .contact-imoges{
-        position: absolute; top: 65%; width: 100%; 
-    }
-    .contact-imoges img{
-        width: 200px; z-index: 100; position: absolute; left:70%; transform: translateX(-10%);
-    }
-
-     .contact-content ul li h4{
-       font-size: 1.5rem; 
-    }
-    .work-sub-container{
-        height: 7%;
-    }
+    .about-title h2{font-size: 2.5rem;}
+    .about-title{height: 20%;}
+    .about-contents{width: 100%; height: 100%; display: flex;flex-direction: column; margin-left:0% ;}
+    .about-texts{width: 90%;height: 100%; position: relative; display: flex; flex-direction: column; left:50%; transform: translateX(-50%);}
+    .about-name{width: 100%; height: 30%; margin: 0;}
+    .about-hahTags{width: 100%; height: 30%; margin: 0;}
+    .about-images{display: none;}
+    .svg-area {width: 100%; height: 100%; position:relative;}
+    .about-utilitys{width: 100%; flex-direction: column; height: 50%;left:0%; top:0%;}
+    .utility-list {width: 100%;height: 100%; margin-top:-10%;}
+    .utility-list h3{font-size: 1.2rem;}
+    .utility-list  ul{width: 100%; display: flex; flex-direction: column; height: 100%; margin: 0; padding: 0;}
+    .utility-list  ul li{width: 100%; display: flex; height: 25%; margin-bottom: 10px; justify-content: space-between; }
+    .utility-list  ul li h4, .utility-list  ul li span p, .utility-list  ul li p{margin:0;}
+    .contact-title h2{font-size: 5rem; }
+    .contact-area{height:0%; width: 90%;}
+    .contact-area.active{height:60%; width: 90%;}
+    .contact-content ul{width: 60%;top:50%; left:40%; margin: 0;height: 100%; flex-direction: column;}
+    .contact-content ul li{height: 25%;}
+    .contact-content ul li p{margin: 0;}
+    .contact-imoges{position: absolute; top: 65%; width: 100%; }
+    .contact-imoges img{width: 200px; z-index: 100; position: absolute; left:70%; transform: translateX(-10%);}
+    .contact-content ul li h4{font-size: 1.5rem;}
+    .work-sub-container{height: 7%;}
     .work-sub-content{
         justify-content: center; align-items: center;
         width: 100%; height: 100%; position: relative; display: flex;flex-direction: column; top:50%; left:0%; transform: translate(0%, -50%);transition: 0.5s ease-in-out;
@@ -314,139 +136,62 @@
     .work-skills{
         width: 60%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
      }
-     .work-link-wrap{
-        width: 60%;height: 50%; position: relative; transition: 0.5s ease-in-out; margin-top: 70px;
-    }
-    .work-skills span{
-       width: 30%;
-    }
-    .work-skills span:last-of-type{
-        width: 40%;
-     }
-     .work-link-wrap button span{
-         background: white;
-     }
-     .work-link-wrap button span a{
-       font-size:1.7rem;
-    }
-  
+    .work-link-wrap{width: 60%;height: 50%; position: relative; transition: 0.5s ease-in-out; margin-top: 70px;}
+    .work-skills span{width: 30%;}
+    .work-skills span:last-of-type{width: 40%;}
+    .work-link-wrap button span{background: white;}
+    .work-link-wrap button span a{font-size:1.7rem;}
+
+    .footer-wrap p{font-size: 0.8rem;}
 }
 @media screen  and (max-width : 550px){
-    .logo > a > img{
-        width: 40px;  top:40%; transform: translate(-100%,-50%);
+    .logo > a > img{width: 40px;  top:40%; transform: translate(-100%,-50%);}
+    .logo > a {top:30%;}
+    .main-title h1{transition: 0.3s ease-in-out; font-size:4rem;}
+     .work-title {width: 40%; right: 5%;transition: 0.3s ease-in-out;}
+     .work-list-wrap{height: 50%;transition: 0.5s ease-in-out}
+    .work-title ul li p {font-size:1.2rem;transition: 0.5s ease-in-out}
+    .work-title ul li .img-wrap.active {left:-70%; }
+    .about-title{width: 100%; height: 10%; position: relative;}
+    .about-title h2{font-size: 2rem; left: 5%; transform: translateY(-50%);}
+    .about-close-btn{position: absolute; width: 30px; height: 30px; top:20px; left: 90%; cursor: pointer; z-index: 100;}
+    .about-close-btn button{
+        position: relative; width: inherit; height: inherit; border:none; outline: none; background:none;cursor: pointer;
     }
-    .logo > a {
-      top:30%;
-    }
-    .main-title h1{
-        transition: 0.3s ease-in-out; font-size:4rem;
-     }
-     .work-title {
-        width: 40%; right: 5%;transition: 0.3s ease-in-out;
-    }
-     .work-list-wrap{
-       height: 50%;transition: 0.5s ease-in-out
-    }
-    .work-title ul li p {
-        font-size:1.2rem;transition: 0.5s ease-in-out
-    }
-    .work-title ul li .img-wrap.active {
-       left:-70%; 
-    }
-  
-     .about-title h2{
-        font-size: 2.2rem;
-     }
-     .utility-list{
-         height: 100%;
-     }
-     .contact-title h2{
-        font-size: 4rem; 
-     }
-     .contact-imoges img{
-        width: 200px; z-index: 100; position: absolute;transition: 0.5s ease-in-out;
-    }
-    .work-open-area{
-        position: relative;  width: 100%; height: 1800px;
-    }
-    .work-wraps {
-        margin-bottom: 2%;
-    }
-    
+    .about-close-btn button span{background: #FF5D2C;}
+    .contact-title h2{font-size: 4rem;}
+    .contact-imoges img{width: 200px; z-index: 100; position: absolute;transition: 0.5s ease-in-out;}
+    .work-open-area{position: relative;  width: 100%; height: 1800px;}
+    .work-wraps {margin-bottom: 2%;}
     .work-wraps .work-texts p {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 100;font-size: 0.9rem;  margin: 0;
+        font-family: 'Noto Sans KR', sans-serif;font-weight: 100;font-size: 0.9rem;  margin: 0;
     }
-    
-    .work-wraps:first-of-type {
-        margin-bottom: 15%;
-    }
-    .work-close-btn{
-        width: 35px; height: 35px; position:fixed; top:0%; right:0%; z-index: 100;transform: translateY( 0%)
-    }
+    .work-wraps:first-of-type {margin-bottom: 15%;}
+    .work-close-btn{width: 35px; height: 35px; position:fixed; top:0%; right:0%; z-index: 100;transform: translateY( 0%)}
     .work-close-btn > button{
         position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer; 
     }
-
-    .work-close-btn button span{
-        background: black;
-    }
-    .pf-list{
-        height: 5%; 
-    }
+    .work-close-btn button span{background: black;}
+    .pf-list{height: 5%; }
     .pf-list ul li a{font-size:1rem;transition: 0.5s ease-in-out;}
+    
 }
 @media screen  and (max-width : 470px){
-    .main-title{
-        top:5%;
-    }
-    .main-title h1{
-        transition: 0.3s ease-in-out; font-size:3rem;
-     }
-     .main-title p{
-        margin:5% 0 0 12%;
-    }
-    .about-title h2{
-        font-size: 2rem; left: 5%; transform: translateY(-50%);
-     }
-    .about-name h3, .about-hahTags h3, .utility-list h3, .about-tmis h3{
-        font-size: 1.2rem;
-     }
-     .contact-title h2{
-        font-size: 3rem; 
-     }
-     .contact-imoges{
-        position: absolute; bottom: 20%; width: 100%;
-    }
-    .contact-content ul li p{
-        font-size: 1rem;
-    }
-    .work-skills{
-        width: 70%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;
-     }
-
-     .about-close-btn{
-        position: absolute; width: 30px; height: 30px; top:3px; left: 90%; cursor: pointer; z-index: 100;
-    }
-    .about-close-btn button{
-        position: relative; width: inherit; height: inherit; border:none; outline: none; background:#FF5D2C;cursor: pointer;
-    }
-    .about-close-btn button span{
-        background: black;
-    }
-  
-
+    .main-title{top:5%;}
+    .main-title h1{transition: 0.3s ease-in-out; font-size:3rem;}
+    .main-title p{margin:5% 0 0 12%;}
+    .about-title h2{font-size: 1.5rem;}
+    .about-name h3, .about-hahTags h3, .utility-list h3{font-size: 1.2rem;}
+    .contact-title h2{font-size: 3rem;}
+    .contact-imoges{position: absolute; bottom: 20%; width: 100%;}
+    .contact-content ul li p{font-size: 1rem;}
+    .work-skills{width: 70%;height: 50%; position: absolute; display: flex; top:0%; left:50%; transform: translateX(-50%);transition: 0.5s ease-in-out;}
 }
 @media screen  and (max-width : 400px){
-    .pf-list ul li a{font-size:0.9rem;transition: 0.5s ease-in-out;}
+    .pf-list ul li a{font-size:0.9rem;transition: 0.5s ease-in-out;} 
 }
 
 @media screen  and (max-height :800px){
-   
-    .about-area.active{
-        overflow-y:auto;
-    }
-    .about-contents{
-        width: 100%; height: 90%; display: flex; margin-left:0% ; overflow-y:auto;
-    }
+    .about-area.active{overflow-y:auto;}
+    .about-contents{width: 100%; height: 100%; display: flex; margin-left:0% ; overflow-y:auto;}
 }
