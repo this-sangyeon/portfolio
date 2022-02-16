@@ -40,9 +40,8 @@ header.active{
     list-style: none; margin-right: 10%; position: relative;  width: 80%;
      display: inline; cursor: pointer; 
 }
-
 .pf-list ul li a{
     color:#FF5D2C;
     font-family: 'Montserrat', sans-serif;transition: 0.5s ease-in-out;
-    font-weight: 700;font-size:1.5rem; text-transform: uppercase;
+    font-weight: 700;font-size:1.5rem; text-transform: uppercase; text-decoration: none;
 }

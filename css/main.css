@@ -184,13 +184,13 @@ section{
 .work-link-wrap button{
     width: 100%;height: 100%; position: relative; border:none; outline: none; background: none; cursor: pointer; 
 }
-.work-link-wrap button > span{
-    border: solid 2px #FF5D2C; padding:5px 30px; position: absolute;top:50%; left:50%; transform: translate(-50%, -50%);
-    border-radius: 50px;  transition: 0.5s ease-in-out;
+
+.work-link-wrap button  a{
+    margin: 0; font-family: 'Montserrat', sans-serif;text-align: center; color:#ffffff;position: absolute; top:50%;  left:50%;transform: translate(-50%,-50%);
+    font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;transition: 0.5s ease-in-out; width: 100%;
 }
-.work-link-wrap button span a{
-    margin: 0; font-family: 'Montserrat', sans-serif;text-align: center; color:#FF5D2C;
-    font-weight: 700;font-size:2rem; text-transform: uppercase; text-decoration: none;transition: 0.5s ease-in-out;
+.work-link-wrap button  a:hover{
+    color:#FF5D2C;
 }
 
 .resolution-area{
@@ -201,7 +201,7 @@ section{
 }
 .resolution-text p{
     text-align: center;font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 100;font-size: 0.8rem; 
+    font-weight: 100;font-size: 0.8rem;  margin-top: 3%;
 }
 .work-contents{
     width: 100%;height: 80%;position: relative;transition: 0.5s ease-in-out;
@@ -324,7 +324,7 @@ article.active{
     width: 50px; fill:#FFBA00; top:65%; left: 5%;transform: translate(0%, 0%);
 }
 .svg-area svg:last-of-type{
-    width: 40px; fill:#FFBA00; top:25%; left: 85%;transform: translate(0%, 0%);
+    width: 40px; fill:#FFBA00; top:40%; left: 85%;transform: translate(0%, 0%);
 }
 .about-images img{
     top:50%; left:40%; transform: translate(-50%, -70%); position: absolute; width: 300px;transition: 0.5s ease-in-out;
