@@ -1,7 +1,7 @@
 # Project 
 ## portfolio site
 
-lee sang yeon - portfolio 2021 ~ 2022.ver !
+lee sang yeon - portfolio "Carpediem" 2021 ~ 2022.ver !
 
 작업을 시작하기 앞서 가장 목표로 했던 부분들을 list화 하였습니다.
 
