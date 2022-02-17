@@ -131,6 +131,7 @@ for(let i = 0; i < pfList.length; i++){
             },300)
             pfListWrap.classList.add('active');
             logo.classList.add('active');
+            header.classList.add('active');
            
         }
         if(articleIndex === 1){
@@ -146,6 +147,7 @@ for(let i = 0; i < pfList.length; i++){
             },300)
             pfListWrap.classList.add('active');
             logo.classList.add('active');
+            header.classList.add('active');
             
         }
     })
@@ -164,6 +166,7 @@ for(let i = 0; i < pfList.length; i++){
             article[0].classList.remove('active');
             pfListWrap.classList.remove('active');
             logo.classList.remove('active');
+            header.classList.remove('active');
         },600)
        
        
@@ -183,6 +186,7 @@ for(let i = 0; i < pfList.length; i++){
             article[1].classList.remove('active');
             pfListWrap.classList.remove('active');
             logo.classList.remove('active');
+            header.classList.remove('active');
         },600)
       
     })
